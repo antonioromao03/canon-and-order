@@ -1,0 +1,113 @@
+# Gold-file template. Copy to gold/universes/<id>.yaml, where <id> is the slug of the
+# input title and year (for example "breaking-bad-2008"). The example below is fictional
+# and shows every field; tests validate this file, so keep it valid when you edit it.
+# Read gold/ANNOTATION_GUIDE.md before annotating.
+
+schema_version: 1
+id: template                      # must equal the file name without .yaml
+input:
+  title: Example Show             # exactly as a user would type it
+  year: "2010"                    # a year or a range such as "2008-2013"; quote it
+status: draft                     # draft | verified (verified = every field checked against a source)
+split: dev                        # dev (used while building) | test (held out)
+cutoff: 2026-11-30                # nothing released after this date belongs in this file
+continuity: >-
+  One or two sentences: which continuity this is and where its boundaries are,
+  as the current rights holder treats it.
+seeded_from_draft: false          # true if you started from an exported artifact timeline
+annotator: António Romão
+annotated_on: null                # YYYY-MM-DD, set when the file becomes verified
+time_spent_minutes: null          # total, including source checking
+
+works:
+  # One entry per atomic release. Dates: write YYYY-MM-DD, YYYY-MM or YYYY (quote the
+  # partial ones). Never fill in a guess: leave a part out and add a flag instead.
+  - id: example-show-s1
+    title: Example Show (Season 1)
+    kind: tv_season               # feature_film | tv_movie | tv_season | miniseries | tv_special
+                                  # | tv_episode | short_film | web_series | promotional_content
+    channel: broadcast            # theatrical | broadcast | streaming | home_video | web | other
+    country: US                   # ISO 3166 code of the country of origin
+    release: 2010-01-10           # premiere of the first episode
+    external_ids: {tmdb: "tv/0/season/1"}
+    pieces:                       # episodes or pieces, numbered in release order
+      - {number: 1, title: Pilot, release: 2010-01-10}
+      - {number: 2, release: 2010-01-17}
+      - {number: 3, release: 2010-01-24}
+    citations:
+      - url: https://example.org/example-show/episodes
+        accessed: 2026-11-07
+        supports: [existence, release, pieces]
+        snippet: "Season 1 premiered January 10, 2010"   # short; under 15 words
+
+  - id: example-show-minisodes
+    title: "Example Show: Minisodes"
+    kind: web_series
+    channel: web
+    country: US
+    release: 2010-01-11
+    parent: example-show-s1       # the season this was made for (companion rows)
+    pieces:
+      - {number: 1, release: 2010-01-11}
+      - {number: 2, release: 2010-01-18}
+    flags: [descriptive_name]     # no official collective title, so the name is descriptive
+    citations:
+      - url: https://example.org/example-show/minisodes
+        accessed: 2026-11-07
+        supports: [existence, release, pieces, parent]
+    notes: One minisode after each of episodes 1 and 2.
+
+  - id: example-show-s2
+    title: Example Show (Season 2)
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2011-03-06
+    pieces:
+      - {number: 1, release: 2011-03-06}
+      - {number: 2, release: 2011-03-13}
+      - {number: 3, release: 2011-03-27}
+      - {number: 4, release: 2011-04-03}
+
+  - id: example-movie
+    title: "Example Show: The Movie"
+    kind: feature_film
+    canon: semi_canon             # canon | semi_canon (shown with a dagger)
+    channel: theatrical
+    country: US
+    release: 2011-03-18           # released between episodes 2 and 3 of season 2
+    flags: [canon_unclear]
+
+rows:
+  # The timeline as a correct output shows it, in order. A work split over several rows
+  # lists the piece range of each; together the ranges must cover every piece once.
+  - work: example-show-s1
+    label: Example Show (Season 1)
+  # The first minisode came out after the premiere, so its companion row goes after the season.
+  - work: example-show-minisodes
+    role: companion
+    label: "Example Show: Minisodes (companion: one after Episode 1 and one after Episode 2 of Example Show (Season 1))"
+  - work: example-show-s2
+    pieces: [1, 2]
+    label: Example Show (Season 2, Episodes 1–2)
+  - work: example-movie
+    label: "Example Show: The Movie †"
+  - work: example-show-s2
+    pieces: [3, 4]
+    label: Example Show (Season 2, Episodes 3–4)
+
+upcoming:
+  - {title: Example Show (Season 3), kind: tv_season, expected: "2027"}
+
+exclusions:
+  - {title: Example Show (2025 remake), reason: Reboot in a separate continuity}
+
+checks:
+  # Targeted rule assertions scored as "rule compliance". Types: present, absent, before, row_count.
+  - {type: row_count, rule: split, work: example-show-s2, rows: 2, note: Split around the movie}
+  - {type: present, rule: semi_canon, work: example-movie}
+  - {type: absent, rule: scope_continuity, title: Example Show (2025 remake)}
+  - {type: before, rule: companion, first: example-show-s1, then: example-show-minisodes, note: "Companion starts after the premiere, so it follows the season row"}
+
+notes:
+  - Free-text notes that the spec would put in the timeline's notes.
