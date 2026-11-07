@@ -31,7 +31,7 @@ works:
     release: 2010-01-10           # premiere of the first episode
     external_ids: {tmdb: "tv/0/season/1"}
     pieces:                       # episodes or pieces, numbered in release order
-      - {number: 1, title: Pilot, release: 2010-01-10}
+      - {number: 1, release: 2010-01-10}
       - {number: 2, release: 2010-01-17}
       - {number: 3, release: 2010-01-24}
     citations:
