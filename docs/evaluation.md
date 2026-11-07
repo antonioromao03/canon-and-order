@@ -1,10 +1,10 @@
-# Evaluation protocol
+# Evaluation Protocol
 
 The headline comparison is the hybrid pipeline against LLM-only baselines on held-out
 universes, scored on **works** (completeness, dates, citations) and **rows** (rules,
 order), with extras reported separately from films and seasons.
 
-## Gold set
+## Gold Set
 
 - v1: 12 universes, frozen at a cut-off date (proposed 2026-11-30). Predictions are
   filtered to the same date before scoring.

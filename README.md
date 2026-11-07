@@ -7,10 +7,9 @@
 **Status:** week 1 of 6. Domain model, gold-set schema and tooling are in; the pipeline,
 API and live demo are coming ([plan](docs/PRD.md#roadmap)).
 
-An independent personal project. It is separate from my MSc dissertation: different domain,
-different data, no shared code.
+This is an independent personal project.
 
-## The problem
+## The Problem
 
 "What order do I watch this in?" guides are hand-curated for a few big franchises, mostly
 list films only, and rarely say where a date came from. The shorts, webisodes and promos
@@ -23,7 +22,7 @@ counts, how crossovers and semi-canon entries are treated, how partial dates sor
 season is split around a film released mid-run, and how promos attach to the season they
 were made for.
 
-## How it works (planned)
+## How it Works (Planned)
 
 ```mermaid
 flowchart LR
@@ -46,7 +45,7 @@ flowchart LR
 this promo made for?); deterministic, unit-tested code owns dates, rows, splits and order.
 See [ADR 0001](docs/adr/0001-llm-for-judgment-code-for-rules.md).
 
-## Evaluation (planned)
+## Evaluation (Planned)
 
 A hand-verified gold set (12 universes for v1, split into dev and test) scores the hybrid
 pipeline against LLM-only baselines on entry precision and recall, date accuracy, order
@@ -64,7 +63,7 @@ uv run pytest                             # tests
 uv run python -m canon_and_order.gold validate   # validate the gold set
 ```
 
-## Repository layout
+## Repository Layout
 
 ```text
 src/canon_and_order/
@@ -75,7 +74,7 @@ docs/         PRD, evaluation protocol, architecture decision records
 tests/
 ```
 
-## Data and attribution
+## Data and Attribution
 
 - This product uses the TMDB API but is not endorsed or certified by TMDB (planned data source).
 - Wikipedia and Wikidata content is used under CC BY-SA 4.0 and CC0 respectively.

@@ -22,3 +22,7 @@ cache/live/
 .idea/
 .vscode/
 .DS_Store
+
+# Claude
+CLAUDE.md
+.claude

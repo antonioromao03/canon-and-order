@@ -1,4 +1,4 @@
-# Product requirements (one page)
+# Product Requirements (One Page)
 
 ## Problem
 
@@ -13,13 +13,13 @@ a date came from.
   and to tick them off.
 - **Catch-up viewer:** wants to know what to watch before a new release, and what is coming.
 
-## Jobs to be done
+## Jobs to be Done
 
 1. "Give me every official screen release in this universe, in release order, with sources."
 2. "Show me what I have watched and what is left."
 3. "Tell me what has been announced and when it is due."
 
-## v1 scope
+## v1 Scope
 
 Title + year in; a cited, rule-compliant timeline out; watched ticks and progress in the
 browser; upcoming releases; a demo with precomputed showcase universes and a daily budget
