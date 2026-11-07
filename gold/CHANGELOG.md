@@ -8,3 +8,4 @@ numbers.
 
 - 2026-11-06: schema v1, template and annotation guide.
 - 2026-11-06: `the-dark-knight-2008` added as a draft seeded from the artifact timeline (unverified).
+- 2026-11-08: `the-dark-knight-2008` verified (dev): piece dates 2–4 added, citations added to every work, stale draft notes removed.
