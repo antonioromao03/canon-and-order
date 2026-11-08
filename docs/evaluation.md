@@ -8,12 +8,11 @@ order), with extras reported separately from films and seasons.
 
 - v1: 12 universes, frozen at a cut-off date (proposed 2026-11-30). Predictions are
   filtered to the same date before scoring.
-- **Dev** (4): Breaking Bad (2008), The Dark Knight (2008), The Godfather (1972),
+- **Dev** (4): Breaking Bad (2008), The Dark Knight (2008), Spider-Man (2002),
   Schindler's List (1993). Breaking Bad and The Dark Knight appear as examples in the
   product spec, so they can never be test universes.
-- **Test** (8): Spider-Man (2002), Battlestar Galactica (2004), Toy Story (1995),
-  The Matrix (1999), Alien (1979), Stranger Things (2016), The Lord of the Rings (2001),
-  12 Angry Men (1957).
+- **Test** (8): 12 Angry Men (1957), The Godfather (1972), Dune (2021), The Matrix (1999),
+  Sherlock (2010), Wednesday (2022), The Lord of the Rings (2001), Alien (1979).
 - A **resolution probe set** of about 15 inputs (misspellings, missing or wrong years,
   duplicates, a title with no screen adaptation) with expected outcomes.
 - Annotated with [gold/ANNOTATION_GUIDE.md](../gold/ANNOTATION_GUIDE.md); versioned in
