@@ -1,4 +1,4 @@
-# Data license
+# Data License
 
 The gold set in `gold/` (the annotation guide, template and every file in
 `gold/universes/`) is licensed under the
