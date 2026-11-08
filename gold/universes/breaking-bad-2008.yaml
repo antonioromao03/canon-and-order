@@ -1,0 +1,757 @@
+schema_version: 1
+id: breaking-bad-2008
+input:
+  title: "Breaking Bad"
+  year: "2008"
+status: verified
+split: dev
+cutoff: 2026-11-30
+continuity: >-
+  The Breaking Bad franchise as Sony Pictures Television and AMC treat it: Breaking Bad (2008–2013),
+  its prequel Better Call Saul (2015–2022), the sequel film El Camino (2019), and their official shorts,
+  web series and in-universe promos. Foreign adaptations, aftershows, documentaries and non-screen
+  media are outside it.
+seeded_from_draft: true
+annotator: António Romão
+annotated_on: 2026-11-08
+time_spent_minutes: 120
+
+works:
+  - id: bb-s1
+    title: "Breaking Bad (Season 1)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2008-01-20
+    pieces:
+      - {number: 1, release: 2008-01-20}
+      - {number: 2, release: 2008-01-27}
+      - {number: 3, release: 2008-02-10}
+      - {number: 4, release: 2008-02-17}
+      - {number: 5, release: 2008-02-24}
+      - {number: 6, release: 2008-03-02}
+      - {number: 7, release: 2008-03-09}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 1 premiered January 20, 2008, seven episodes"
+
+  - id: bb-minisodes-1
+    title: "Breaking Bad: Original Minisodes (Minisodes 1–5)"
+    kind: web_series
+    channel: web
+    country: US
+    release: 2009-02-17
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release]
+        snippet: "First five minisodes released February 17, 2009"
+      - url: https://www.tubefilter.com/2009/02/19/amc-breadking-bad-online-originals-and-minisodes/amp/
+        accessed: 2026-11-08
+        supports: [existence, release]
+        snippet: "AMC and Sony launched five online original episodes this week"
+    notes: "All five released together on AMC's website and Crackle ahead of the Season 2 premiere, so no pieces are listed and there is no parent (released outside a season run)."
+
+  - id: bb-s2
+    title: "Breaking Bad (Season 2)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2009-03-08
+    pieces:
+      - {number: 1, release: 2009-03-08}
+      - {number: 2, release: 2009-03-15}
+      - {number: 3, release: 2009-03-22}
+      - {number: 4, release: 2009-03-29}
+      - {number: 5, release: 2009-04-05}
+      - {number: 6, release: 2009-04-12}
+      - {number: 7, release: 2009-04-19}
+      - {number: 8, release: 2009-04-26}
+      - {number: 9, release: 2009-05-03}
+      - {number: 10, release: 2009-05-10}
+      - {number: 11, release: 2009-05-17}
+      - {number: 12, release: 2009-05-24}
+      - {number: 13, release: 2009-05-31}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 2 aired March 8 to May 31, 2009"
+
+  - id: bb-minisodes-2
+    title: "Breaking Bad: Original Minisodes (Minisodes 6–15)"
+    kind: web_series
+    channel: web
+    country: US
+    release: "2010"
+    pieces:
+      - {number: 1, release: "2010"}
+      - {number: 2, release: "2010"}
+      - {number: 3, release: "2010"}
+      - {number: 4, release: "2010"}
+      - {number: 5, release: "2010"}
+      - {number: 6, release: "2010"}
+      - {number: 7, release: "2010"}
+      - {number: 8, release: "2010"}
+      - {number: 9, release: "2010"}
+      - {number: 10, release: "2010"}
+    flags: [date_unconfirmed, piece_dates_unconfirmed, date_conflict]
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, pieces]
+        snippet: "Ten minisodes released in 2010, no specific dates"
+      - url: https://breakingbad.fandom.com/wiki/Breaking_Bad:_Original_Minisodes
+        accessed: 2026-11-08
+        supports: [release]
+        snippet: "Saul webcam feed February 2010; nine more before season three"
+      - url: https://epguides.tv/shows/breaking-bad-original-minisodes/episodes
+        accessed: 2026-11-08
+        supports: [release]
+        snippet: "Lists all ten minisodes on March 15, 2010"
+    notes: "Mostly Saul Goodman web videos plus the animated 'Team S.C.I.E.N.C.E.'. Fandom wiki says the first came out in February 2010 and nine more before the Season 3 premiere, with one later; epguides lists all on 2010-03-15 (likely a placeholder). Only the year is confirmed. Placed before Season 3 because most pieces reportedly preceded it; whether any fell inside the Season 3 run is unconfirmed, so no parent."
+
+  - id: bb-s3
+    title: "Breaking Bad (Season 3)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2010-03-21
+    pieces:
+      - {number: 1, release: 2010-03-21}
+      - {number: 2, release: 2010-03-28}
+      - {number: 3, release: 2010-04-04}
+      - {number: 4, release: 2010-04-11}
+      - {number: 5, release: 2010-04-18}
+      - {number: 6, release: 2010-04-25}
+      - {number: 7, release: 2010-05-02}
+      - {number: 8, release: 2010-05-09}
+      - {number: 9, release: 2010-05-16}
+      - {number: 10, release: 2010-05-23}
+      - {number: 11, release: 2010-05-30}
+      - {number: 12, release: 2010-06-06}
+      - {number: 13, release: 2010-06-13}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 3 aired March 21 to June 13, 2010"
+
+  - id: bb-minisodes-3
+    title: "Breaking Bad: Original Minisodes (Minisodes 16–17)"
+    kind: web_series
+    channel: web
+    country: US
+    release: "2011"
+    pieces:
+      - {number: 1, release: "2011"}
+      - {number: 2, release: "2011"}
+    flags: [date_conflict, piece_dates_unconfirmed]
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release]
+        snippet: "Two minisodes released in 2011"
+      - url: https://www.cheatsheet.com/news/breaking-bad-17-secret-episodes-fans-dont-know-about.html
+        accessed: 2026-11-08
+        supports: [release]
+        snippet: "Two minisodes between seasons 3 and 4"
+      - url: https://epguides.tv/shows/breaking-bad-original-minisodes/episodes
+        accessed: 2026-11-08
+        supports: [release]
+        snippet: "Fatty Fat Fat and Fighting for You dated July 11, 2011"
+    notes: "'Fatty Fat Fat' and 'Fighting for You'. Sources disagree on timing: epguides gives 2011-07-11 and Cheat Sheet says between Seasons 3 and 4, while the fandom wiki says after Season 4. Only the year is treated as confirmed; placed before Season 4 on the majority reading."
+
+  - id: bb-s4
+    title: "Breaking Bad (Season 4)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2011-07-17
+    pieces:
+      - {number: 1, release: 2011-07-17}
+      - {number: 2, release: 2011-07-24}
+      - {number: 3, release: 2011-07-31}
+      - {number: 4, release: 2011-08-07}
+      - {number: 5, release: 2011-08-14}
+      - {number: 6, release: 2011-08-21}
+      - {number: 7, release: 2011-08-28}
+      - {number: 8, release: 2011-09-04}
+      - {number: 9, release: 2011-09-11}
+      - {number: 10, release: 2011-09-18}
+      - {number: 11, release: 2011-09-25}
+      - {number: 12, release: 2011-10-02}
+      - {number: 13, release: 2011-10-09}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 4 aired July 17 to October 9, 2011"
+
+  - id: bb-s5a
+    title: "Breaking Bad (Season 5 - Part 1)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2012-07-15
+    pieces:
+      - {number: 1, release: 2012-07-15}
+      - {number: 2, release: 2012-07-22}
+      - {number: 3, release: 2012-07-29}
+      - {number: 4, release: 2012-08-05}
+      - {number: 5, release: 2012-08-12}
+      - {number: 6, release: 2012-08-19}
+      - {number: 7, release: 2012-08-26}
+      - {number: 8, release: 2012-09-02}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 5 Part One aired July 15 to September 2, 2012"
+
+  - id: chicks-n-guns
+    title: "Chicks 'N' Guns"
+    kind: short_film
+    channel: home_video
+    country: US
+    release: 2013-06-04
+    parent: bb-s5a
+    citations:
+      - url: https://www.discdish.com/2013/04/04/blu-ray-dvd-release-breaking-bad-season-5/
+        accessed: 2026-11-08
+        supports: [existence, release, parent]
+        snippet: "Season 5 Blu-ray and DVD due June 4, 2013, with new scene"
+      - url: https://en.wikipedia.org/wiki/Breaking_Bad_(franchise)
+        accessed: 2026-11-08
+        supports: [existence]
+        snippet: "Eight-minute bonus scene on the season 5 sets"
+    notes: "Bonus scene made for the Season 5 (Part 1) DVD/Blu-ray, so its parent is Season 5 Part 1. It came out between the two halves, after that part's run, and is a single extra rather than a set released during the run, so it isn't a companion row: its row stays in date order."
+
+  - id: bb-s5b
+    title: "Breaking Bad (Season 5 - Part 2)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2013-08-11
+    pieces:
+      - {number: 1, release: 2013-08-11}
+      - {number: 2, release: 2013-08-18}
+      - {number: 3, release: 2013-08-25}
+      - {number: 4, release: 2013-09-01}
+      - {number: 5, release: 2013-09-08}
+      - {number: 6, release: 2013-09-15}
+      - {number: 7, release: 2013-09-22}
+      - {number: 8, release: 2013-09-29}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 5 Part Two aired August 11 to September 29, 2013"
+
+  - id: bcs-s1
+    title: "Better Call Saul (Season 1)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2015-02-08
+    pieces:
+      - {number: 1, release: 2015-02-08}
+      - {number: 2, release: 2015-02-09}
+      - {number: 3, release: 2015-02-16}
+      - {number: 4, release: 2015-02-23}
+      - {number: 5, release: 2015-03-02}
+      - {number: 6, release: 2015-03-09}
+      - {number: 7, release: 2015-03-16}
+      - {number: 8, release: 2015-03-23}
+      - {number: 9, release: 2015-03-30}
+      - {number: 10, release: 2015-04-06}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Better_Call_Saul_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 1 aired February 8 to April 6, 2015"
+
+  - id: bcs-s2
+    title: "Better Call Saul (Season 2)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2016-02-15
+    pieces:
+      - {number: 1, release: 2016-02-15}
+      - {number: 2, release: 2016-02-22}
+      - {number: 3, release: 2016-02-29}
+      - {number: 4, release: 2016-03-07}
+      - {number: 5, release: 2016-03-14}
+      - {number: 6, release: 2016-03-21}
+      - {number: 7, release: 2016-03-28}
+      - {number: 8, release: 2016-04-04}
+      - {number: 9, release: 2016-04-11}
+      - {number: 10, release: 2016-04-18}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Better_Call_Saul_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 2 aired February 15 to April 18, 2016"
+
+  - id: pollos-commercial-2017
+    title: "Los Pollos Hermanos: Taste the Family"
+    kind: promotional_content
+    channel: web
+    country: US
+    release: 2017-01-11
+    parent: bcs-s3
+    flags: [descriptive_name]
+    citations:
+      - url: https://tvline.com/2017/01/11/better-call-saul-video-gus-fring-season-3-breaking-bad-giancarlo-esposito
+        accessed: 2026-11-08
+        supports: [existence, release, parent]
+        snippet: "Mock Los Pollos Hermanos commercial with Gus released January 11, 2017"
+    notes: "In-character commercial for the fictional chain, released by AMC as a Season 3 teaser, so its parent is Season 3. It came out three months before the premiere and isn't part of a set released during the run, so it isn't a companion row: its row stays in date order. 'Taste the Family' is its tagline; there is no official title."
+
+  - id: pollos-training
+    title: "Los Pollos Hermanos Employee Training"
+    kind: promotional_content
+    channel: web
+    country: US
+    release: 2017-04-04
+    parent: bcs-s3
+    external_ids: {tmdb: "tv/90746/season/1"}
+    pieces:
+      - {number: 1, release: 2017-04-04}
+      - {number: 2, release: 2017-04-17}
+      - {number: 3, release: 2017-04-24}
+      - {number: 4, release: 2017-05-01}
+      - {number: 5, release: 2017-05-08}
+      - {number: 6, release: 2017-05-15}
+      - {number: 7, release: 2017-05-22}
+      - {number: 8, release: 2017-06-05}
+      - {number: 9, release: 2017-06-12}
+      - {number: 10, release: 2017-06-19}
+    flags: [date_conflict, piece_dates_unconfirmed]
+    citations:
+      - url: https://www.tvmaze.com/seasons/95816/better-call-saul-employee-training-season-1/episodeguide
+        accessed: 2026-11-08
+        supports: [pieces, release]
+        snippet: "Ten videos, April 4 to June 19, 2017"
+      - url: https://www.flavorwire.com/602886/gus-fring-returns-with-a-creepily-un-creepy-los-pollos-hermanos-employee-training-video
+        accessed: 2026-11-08
+        supports: [existence, release]
+        snippet: "Training video out April 5, 2017, before the season 3 premiere"
+      - url: https://oldbrief.promax.org/article/better-call-saul-training-videos
+        accessed: 2026-11-08
+        supports: [parent]
+        snippet: "Ten videos released weekly during season 3 on AMC social channels"
+      - url: https://themoviedb.org/tv/90746-better-call-saul-employee-training/seasons
+        accessed: 2026-11-08
+        supports: [existence]
+        snippet: "Season 1: Los Pollos Hermanos Employee Training, 10 episodes"
+    notes: "Dates follow TVmaze (first video 2017-04-04, the rest on Season 3 episode days), backed by Flavorwire's 2017-04-05 article; TheTVDB gives 2017-04-10 for the first and different later dates. First video preceded the premiere and the set is one per episode, so the companion row goes before Season 3."
+
+  - id: bcs-s3
+    title: "Better Call Saul (Season 3)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2017-04-10
+    pieces:
+      - {number: 1, release: 2017-04-10}
+      - {number: 2, release: 2017-04-17}
+      - {number: 3, release: 2017-04-24}
+      - {number: 4, release: 2017-05-01}
+      - {number: 5, release: 2017-05-08}
+      - {number: 6, release: 2017-05-15}
+      - {number: 7, release: 2017-05-22}
+      - {number: 8, release: 2017-06-05}
+      - {number: 9, release: 2017-06-12}
+      - {number: 10, release: 2017-06-19}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Better_Call_Saul_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 3 aired April 10 to June 19, 2017"
+
+  - id: no-picnic
+    title: "No Picnic"
+    kind: short_film
+    channel: web
+    country: US
+    release: 2017-06-19
+    parent: bcs-s3
+    citations:
+      - url: https://en.wikipedia.org/wiki/Better_Call_Saul_season_3
+        accessed: 2026-11-08
+        supports: [existence, release, parent]
+        snippet: "Three-minute short released the night of the season 3 finale"
+      - url: https://thehdroom.com/bluray/better-call-saul-season-4-blu-ray-dvd-digital-release-date-and-details-121959/
+        accessed: 2026-11-08
+        supports: [existence]
+        snippet: "Short film No Picnic among Season 4 disc extras"
+    notes: "Unlocked through the Los Pollos Hermanos training-video bingo game and released on the night of the Season 3 finale; its order relative to the finale broadcast is unconfirmed."
+
+  - id: bcs-s4
+    title: "Better Call Saul (Season 4)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2018-08-06
+    pieces:
+      - {number: 1, release: 2018-08-06}
+      - {number: 2, release: 2018-08-13}
+      - {number: 3, release: 2018-08-20}
+      - {number: 4, release: 2018-08-27}
+      - {number: 5, release: 2018-09-03}
+      - {number: 6, release: 2018-09-10}
+      - {number: 7, release: 2018-09-17}
+      - {number: 8, release: 2018-09-24}
+      - {number: 9, release: 2018-10-01}
+      - {number: 10, release: 2018-10-08}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Better_Call_Saul_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 4 aired August 6 to October 8, 2018"
+
+  - id: madrigal-training
+    title: "Madrigal Electromotive Security Training"
+    kind: promotional_content
+    channel: streaming
+    country: US
+    release: 2018-08-20
+    parent: bcs-s4
+    external_ids: {tmdb: "tv/90746/season/2"}
+    pieces:
+      - {number: 1, release: 2018-08-20}
+      - {number: 2, release: 2018-08-20}
+      - {number: 3, release: 2018-08-20}
+      - {number: 4, release: 2018-08-27}
+      - {number: 5, release: 2018-09-03}
+      - {number: 6, release: 2018-09-10}
+      - {number: 7, release: 2018-09-17}
+      - {number: 8, release: 2018-09-24}
+      - {number: 9, release: 2018-10-01}
+      - {number: 10, release: 2018-10-10}
+    flags: [date_conflict, piece_dates_unconfirmed]
+    citations:
+      - url: https://thetvdb.com/series/better-call-saul-los-pollos-hermanos-employee-training/allseasons/official
+        accessed: 2026-11-08
+        supports: [pieces, release]
+        snippet: "Videos 1–3 August 20, 2018; last October 10"
+      - url: https://www.hollywoodreporter.com/tv/tv-news/better-call-sauls-mike-teaches-finer-points-security-1135845
+        accessed: 2026-11-08
+        supports: [existence, parent]
+        snippet: "First three debut Monday on AMC Premiere; ten in total"
+      - url: https://showsnob.com/2018/08/21/better-call-saul-security-video/?mm-view=app
+        accessed: 2026-11-08
+        supports: [release]
+        snippet: "Rest released after Season 4 concludes"
+      - url: https://themoviedb.org/tv/90746-better-call-saul-employee-training/seasons
+        accessed: 2026-11-08
+        supports: [existence]
+        snippet: "Season 2: Madrigal Electromotive Security Training, from August 20, 2018"
+    notes: "First three debuted on AMC Premiere on 2018-08-20 (the day of Season 4 Episode 3). TheTVDB dates the rest weekly through 2018-10-10, but ShowSnob says they followed the season's end. Later piece dates are unconfirmed."
+
+  - id: el-camino
+    title: "El Camino: A Breaking Bad Movie"
+    kind: feature_film
+    channel: streaming
+    country: US
+    release: 2019-10-11
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release]
+        snippet: "Released on Netflix October 11, 2019; AMC broadcast February 16, 2020"
+      - url: https://en.wikipedia.org/wiki/Breaking_Bad_(franchise)
+        accessed: 2026-11-08
+        supports: [release]
+        snippet: "Limited U.S. theatrical run October 11–13"
+    notes: "Netflix streaming and a limited US theatrical run began the same day (2019-10-11)."
+
+  - id: snow-globe
+    title: "Snow Globe: A Breaking Bad Short"
+    kind: short_film
+    channel: web
+    country: US
+    release: 2020-02-17
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Breaking_Bad_episodes
+        accessed: 2026-11-08
+        supports: [existence, release]
+        snippet: "Released February 17, 2020, on AMC's official YouTube account"
+      - url: https://cinemablend.com/television/2490447/new-breaking-bad-video-reveals-the-story-behind-todds-creepiest-snow-globe
+        accessed: 2026-11-08
+        supports: [existence]
+        snippet: "AMC short released alongside El Camino's TV premiere"
+    notes: "Tied to El Camino's AMC premiere, not to a TV season, so no parent. Some coverage guesses it is an El Camino deleted scene; AMC released it as a titled short."
+
+  - id: ethics-training
+    title: "Ethics Training with Kim Wexler"
+    kind: promotional_content
+    channel: web
+    country: US
+    release: 2020-02-23
+    parent: bcs-s5
+    external_ids: {tmdb: "tv/90746/season/3"}
+    pieces:
+      - {number: 1, release: 2020-02-23}
+      - {number: 2, release: 2020-02-24}
+      - {number: 3, release: 2020-03-02}
+      - {number: 4, release: 2020-03-09}
+      - {number: 5, release: 2020-03-16}
+      - {number: 6, release: 2020-03-23}
+      - {number: 7, release: 2020-03-30}
+      - {number: 8, release: 2020-04-06}
+      - {number: 9, release: 2020-04-13}
+      - {number: 10, release: 2020-04-20}
+    flags: [date_conflict, piece_dates_unconfirmed]
+    citations:
+      - url: https://thetvdb.com/series/better-call-saul-los-pollos-hermanos-employee-training/allseasons/official
+        accessed: 2026-11-08
+        supports: [pieces, release]
+        snippet: "Ten videos, February 23 to April 20, 2020"
+      - url: https://www.rottentomatoes.com/tv/better_call_saul_los_pollos_hermanos_employee_training/s03
+        accessed: 2026-11-08
+        supports: [pieces]
+        snippet: "Same ten dates matching Season 5 episodes"
+      - url: https://www.amc.com/blogs/saul-goodman-productions-presents-ethics-training-with-kim-wexler--1004110
+        accessed: 2026-11-08
+        supports: [existence]
+        snippet: "AMC post of February 28, 2020: first two courses free"
+      - url: https://themoviedb.org/tv/90746-better-call-saul-employee-training/seasons
+        accessed: 2026-11-08
+        supports: [existence]
+        snippet: "Season 3 of the training series begins February 23, 2020"
+    notes: "Listing sites date each video to a Season 5 episode day; AMC's official announcement is dated 2020-02-28, so the first two may have gone public a few days later. If so, the companion row would follow Season 5 instead of preceding it."
+
+  - id: bcs-s5
+    title: "Better Call Saul (Season 5)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2020-02-23
+    pieces:
+      - {number: 1, release: 2020-02-23}
+      - {number: 2, release: 2020-02-24}
+      - {number: 3, release: 2020-03-02}
+      - {number: 4, release: 2020-03-09}
+      - {number: 5, release: 2020-03-16}
+      - {number: 6, release: 2020-03-23}
+      - {number: 7, release: 2020-03-30}
+      - {number: 8, release: 2020-04-06}
+      - {number: 9, release: 2020-04-13}
+      - {number: 10, release: 2020-04-20}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Better_Call_Saul_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 5 aired February 23 to April 20, 2020"
+
+  - id: american-greed
+    title: "American Greed: James McGill"
+    kind: promotional_content
+    channel: web
+    country: US
+    release: 2022-04-01
+    parent: bcs-s6a
+    citations:
+      - url: https://tvmaze.com/episodes/2947763/better-call-saul-s06-special-american-greed-james-mcgill
+        accessed: 2026-11-08
+        supports: [existence, release]
+        snippet: "Special dated April 1, 2022"
+      - url: https://en.wikipedia.org/wiki/Breaking_Bad_(franchise)
+        accessed: 2026-11-08
+        supports: [existence, parent]
+        snippet: "Mockumentary on CNBC Prime's YouTube, weeks before season 6"
+      - url: https://bleedingcool.com/tv/better-call-saul-season-6-cnbc-shares-jimmys-american-greed-story
+        accessed: 2026-11-08
+        supports: [existence]
+        snippet: "CNBC shares Jimmy's American Greed story"
+    notes: "In-universe mock episode of CNBC's American Greed, written by Peter Gould's assistant, promoting Season 6, so its parent is Season 6 Part 1. It came out before the premiere and isn't paired with an episode, so it isn't a companion row: its row stays in date order."
+
+  - id: bcs-s6a
+    title: "Better Call Saul (Season 6 - Part 1)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2022-04-18
+    pieces:
+      - {number: 1, release: 2022-04-18}
+      - {number: 2, release: 2022-04-18}
+      - {number: 3, release: 2022-04-25}
+      - {number: 4, release: 2022-05-02}
+      - {number: 5, release: 2022-05-09}
+      - {number: 6, release: 2022-05-16}
+      - {number: 7, release: 2022-05-23}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Better_Call_Saul_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 6 Part One aired April 18 to May 23, 2022"
+
+  - id: slippin-jimmy
+    title: "Slippin' Jimmy"
+    kind: web_series
+    canon: semi_canon
+    channel: streaming
+    country: US
+    release: 2022-05-23
+    parent: bcs-s6a
+    flags: [canon_unclear, same_day_order_unconfirmed]
+    citations:
+      - url: https://en.wikipedia.org/wiki/Slippin%27_Jimmy
+        accessed: 2026-11-08
+        supports: [existence, release, parent, canon]
+        snippet: "Six 8–9 minute episodes on AMC+, timed to the mid-season finale"
+    notes: "Animated short-form spin-off (six 8–9 minute episodes) released all at once on AMC+ on 2022-05-23, timed to Season 6 Episode 7, the Part 1 finale. Treated as supplementary (web_series): it is a short-form series made for Better Call Saul, so its parent is Season 6 Part 1 and it gets a companion row. Supplementary content never splits a TV season, so Part 1 stays one row, and the companion row follows it because it came out after the premiere. Whether it went up before or after Episode 7 aired is unconfirmed, hence 'alongside' and the same-day flag. No official canon ruling; /Film calls it non-canonical."
+
+  - id: filmmaker-training
+    title: "Filmmaker Training"
+    kind: promotional_content
+    channel: web
+    country: US
+    release: 2022-07-11
+    parent: bcs-s6b
+    external_ids: {tmdb: "tv/90746/season/4"}
+    pieces:
+      - {number: 1, release: 2022-07-11}
+      - {number: 2, release: 2022-07-19}
+      - {number: 3, release: 2022-07-26}
+      - {number: 4, release: 2022-08-02}
+      - {number: 5, release: 2022-08-09}
+      - {number: 6, release: 2022-08-16}
+    flags: [date_conflict, piece_dates_unconfirmed]
+    citations:
+      - url: https://breakingbad.fandom.com/wiki/Filmmaker_Training
+        accessed: 2026-11-08
+        supports: [pieces, release, parent]
+        snippet: "Six minisodes, July 11 to August 16, 2022, advertising season 6"
+      - url: https://thetvdb.com/series/better-call-saul-los-pollos-hermanos-employee-training/allseasons/official
+        accessed: 2026-11-08
+        supports: [pieces]
+        snippet: "Six videos, July 11 to August 16, 2022"
+      - url: https://www.rottentomatoes.com/tv/better_call_saul_filmmaker_training/s01
+        accessed: 2026-11-08
+        supports: [release]
+        snippet: "Three dated July 26, three dated August 16"
+      - url: https://themoviedb.org/tv/90746-better-call-saul-employee-training/seasons
+        accessed: 2026-11-08
+        supports: [existence]
+        snippet: "Season 4: Filmmaker Training, from July 11, 2022"
+    notes: "Dates follow the fandom wiki (first on the Part 2 premiere day, then the day after each later episode). TheTVDB gives 2022-07-18 and 2022-07-25 for videos 2–3; Rotten Tomatoes lists them in two batches of three (2022-07-26 and 2022-08-16)."
+
+  - id: bcs-s6b
+    title: "Better Call Saul (Season 6 - Part 2)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2022-07-11
+    pieces:
+      - {number: 1, release: 2022-07-11}
+      - {number: 2, release: 2022-07-18}
+      - {number: 3, release: 2022-07-25}
+      - {number: 4, release: 2022-08-01}
+      - {number: 5, release: 2022-08-08}
+      - {number: 6, release: 2022-08-15}
+    citations:
+      - url: https://en.wikipedia.org/wiki/List_of_Better_Call_Saul_episodes
+        accessed: 2026-11-08
+        supports: [existence, release, pieces]
+        snippet: "Season 6 Part Two aired July 11 to August 15, 2022"
+
+rows:
+  - work: bb-s1
+    label: "Breaking Bad (Season 1)"
+  - work: bb-minisodes-1
+    label: "Breaking Bad: Original Minisodes (Minisodes 1–5)"
+  - work: bb-s2
+    label: "Breaking Bad (Season 2)"
+  - work: bb-minisodes-2
+    label: "Breaking Bad: Original Minisodes (Minisodes 6–15)"
+  - work: bb-s3
+    label: "Breaking Bad (Season 3)"
+  - work: bb-minisodes-3
+    label: "Breaking Bad: Original Minisodes (Minisodes 16–17)"
+  - work: bb-s4
+    label: "Breaking Bad (Season 4)"
+  - work: bb-s5a
+    label: "Breaking Bad (Season 5 - Part 1)"
+  - work: chicks-n-guns
+    label: "Chicks 'N' Guns"
+  - work: bb-s5b
+    label: "Breaking Bad (Season 5 - Part 2)"
+  - work: bcs-s1
+    label: "Better Call Saul (Season 1)"
+  - work: bcs-s2
+    label: "Better Call Saul (Season 2)"
+  - work: pollos-commercial-2017
+    label: "Los Pollos Hermanos: Taste the Family"
+  - work: pollos-training
+    role: companion
+    label: "Los Pollos Hermanos Employee Training (companion: one alongside each episode of Better Call Saul (Season 3))"
+  - work: bcs-s3
+    label: "Better Call Saul (Season 3)"
+  - work: no-picnic
+    role: companion
+    label: "No Picnic (companion: alongside Episode 10 of Better Call Saul (Season 3))"
+  - work: bcs-s4
+    label: "Better Call Saul (Season 4)"
+  - work: madrigal-training
+    role: companion
+    label: "Madrigal Electromotive Security Training (companion: alongside Episodes 3–10 of Better Call Saul (Season 4))"
+  - work: el-camino
+    label: "El Camino: A Breaking Bad Movie"
+  - work: snow-globe
+    label: "Snow Globe: A Breaking Bad Short"
+  - work: ethics-training
+    role: companion
+    label: "Ethics Training with Kim Wexler (companion: one alongside each episode of Better Call Saul (Season 5))"
+  - work: bcs-s5
+    label: "Better Call Saul (Season 5)"
+  - work: american-greed
+    label: "American Greed: James McGill"
+  - work: bcs-s6a
+    label: "Better Call Saul (Season 6 - Part 1)"
+  - work: slippin-jimmy
+    role: companion
+    label: "Slippin' Jimmy † (companion: alongside Episode 7 of Better Call Saul (Season 6 - Part 1))"
+  - work: filmmaker-training
+    role: companion
+    label: "Filmmaker Training (companion: one alongside each episode of Better Call Saul (Season 6 - Part 2))"
+  - work: bcs-s6b
+    label: "Better Call Saul (Season 6 - Part 2)"
+
+upcoming: []
+
+exclusions:
+  - {title: "Metástasis", reason: "2014 Colombian Spanish-language remake; separate continuity"}
+  - {title: "Talking Bad", reason: "Real-world live aftershow"}
+  - {title: "Talking Saul", reason: "Real-world live aftershow"}
+  - {title: "The Broken and the Bad", reason: "2020 true-crime documentary series hosted by Giancarlo Esposito"}
+  - {title: "Breaking Good (PopCorners Super Bowl commercial)", reason: "2023 in-character commercial for a real product, outside the story's continuity"}
+  - {title: "Saul4Democracy", reason: "2026 in-character public service videos on an independent YouTube channel, not from the rights holder"}
+  - {title: "Better Call Saul Season 2 home-release commercials (Davis & Main, 'Who Stole My Nest Egg?!')", reason: "Standalone copies of commercials made within episodes"}
+  - {title: "Mesa Verde Bank and Trust TV spots (Better Call Saul Season 5 home release)", reason: "Full versions of ads seen in Season 5 episodes (the vintage Mesa Verde ad and Jimmy's class-action ads), not new content"}
+  - {title: "Breaking Bad: The Movie (2017)", reason: "Unofficial fan edit"}
+  - {title: "Breaking Bad: Criminal Elements", reason: "Mobile game, not screen media"}
+  - {title: "Breaking Bad and Better Call Saul digital comics", reason: "Not screen media"}
+  - {title: "Breaking Bad – Ozymandias (mini-opera)", reason: "Stage work, not screen media"}
+
+checks:
+  - {type: before, rule: companion, first: pollos-training, then: bcs-s3, note: "First video preceded the Season 3 premiere"}
+  - {type: before, rule: companion, first: bcs-s3, then: no-picnic, note: "Released on the finale night, after the premiere"}
+  - {type: before, rule: companion, first: bcs-s4, then: madrigal-training, note: "First videos came out with Episode 3"}
+  - {type: present, rule: semi_canon, work: slippin-jimmy}
+  - {type: absent, rule: scope_continuity, title: "Metástasis", note: "Colombian remake"}
+
+notes:
+  - "Country of origin is the US for every work (AMC and Sony Pictures Television productions; El Camino premiered on Netflix in the US)."
+  - "Better Call Saul Season 6 is split into Part 1 and Part 2 as AMC presented it; Breaking Bad Season 5 likewise."
+  - "Breaking Bad: Original Minisodes came out in three batches (2009, 2010, 2011), each treated as its own work; dates for the 2010 and 2011 batches are confirmed only to the year."
+  - "Training-video piece dates come from listing sites (TheTVDB, TVmaze, Rotten Tomatoes, fandom wiki) that partly disagree; see each work's notes."
+  - "Los Pollos Hermanos: Taste the Family has a descriptive name; 'Taste the Family' is the ad's tagline."
+  - "Slippin' Jimmy is kept as semi-canon because no official canon ruling was found."
+  - "Promos and extras made for a specific season have it as parent even when released outside its run (Chicks 'N' Guns, Los Pollos Hermanos: Taste the Family, American Greed: James McGill); only sets released during a run get companion rows."
+  - "No officially announced titles in this continuity were found as of the cutoff."
