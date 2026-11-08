@@ -1,0 +1,171 @@
+schema_version: 1
+id: spider-man-2002
+input:
+  title: "Spider-Man"
+  year: "2002"
+status: verified
+split: dev
+cutoff: 2026-11-30
+continuity: >-
+  Sony Pictures' Sam Raimi Spider-Man continuity starring Tobey Maguire: the 2002 film,
+  its two sequels, the 2003 MTV animated series made as its continuation (semi-canon,
+  later contradicted by Spider-Man 2), and the multiverse crossover Spider-Man: No Way
+  Home, in which this continuity's Peter Parker appears. The Amazing Spider-Man films,
+  the rest of the MCU and the Spider-Verse animated films are separate continuities.
+seeded_from_draft: false
+annotator: António Romão
+annotated_on: 2026-11-08
+time_spent_minutes: 30
+
+works:
+  - id: spider-man
+    title: Spider-Man
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2002-05-03
+    citations:
+      - url: https://en.wikipedia.org/wiki/Spider-Man_(2002_film)
+        accessed: 2026-11-08
+        supports: [existence, release, continuity]
+        snippet: "Premiered April 29, 2002; released in the United States on May 3"
+      - url: https://www.the-numbers.com/movies/franchise/spider-man
+        accessed: 2026-11-08
+        supports: [release]
+        snippet: "Spider-Man (2002), May 3, 2002"
+
+  - id: spider-man-tnas-s1
+    title: "Spider-Man: The New Animated Series (Season 1)"
+    kind: tv_season
+    canon: semi_canon
+    channel: broadcast
+    country: US
+    release: 2003-07-11
+    pieces:
+      - {number: 1, release: 2003-07-11}
+      - {number: 2, release: 2003-07-11}
+      - {number: 3, release: 2003-07-18}
+      - {number: 4, release: 2003-07-18}
+      - {number: 5, release: 2003-07-25}
+      - {number: 6, release: 2003-07-25}
+      - {number: 7, release: 2003-08-01}
+      - {number: 8, release: 2003-08-08}
+      - {number: 9, release: 2003-08-15}
+      - {number: 10, release: 2003-08-22}
+      - {number: 11, release: 2003-08-29}
+      - {number: 12, release: 2003-09-05}
+      - {number: 13, release: 2003-09-12}
+    flags: [canon_unclear]
+    citations:
+      - url: https://en.wikipedia.org/wiki/Spider-Man:_The_New_Animated_Series
+        accessed: 2026-11-08
+        supports: [existence, canon, continuity]
+        snippet: "Intended to continue the 2002 film; later contradicted by Spider-Man 2"
+      - url: https://epguides.com/SpiderMan_2003
+        accessed: 2026-11-08
+        supports: [release, pieces]
+        snippet: "MTV, 13 episodes, 11 Jul 2003 to 12 Sep 2003"
+    notes: >-
+      Semi-canon: made by Sony as a continuation of the 2002 film, but Spider-Man 2
+      contradicts it and it is now generally treated as a separate universe; flagged
+      canon_unclear. Pieces are numbered in MTV air order (two episodes aired on each
+      of 11, 18 and 25 July 2003), which differs from the production numbering on
+      Wikipedia; same-day pieces follow epguides' order. Animated by Mainframe
+      Entertainment (Canada) for Sony; treated as a US production because it was made
+      by Sony Pictures Television and premiered on MTV in the US.
+
+  - id: spider-man-2
+    title: Spider-Man 2
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2004-06-30
+    citations:
+      - url: https://en.wikipedia.org/wiki/Spider-Man_2
+        accessed: 2026-11-08
+        supports: [existence, release, continuity]
+        snippet: "Spider-Man 2 opened in the United States on June 30, 2004"
+      - url: https://www.the-numbers.com/movies/franchise/spider-man
+        accessed: 2026-11-08
+        supports: [release]
+        snippet: "Spider-Man 2, Jun 30, 2004"
+
+  - id: spider-man-3
+    title: Spider-Man 3
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2007-05-04
+    citations:
+      - url: https://en.wikipedia.org/wiki/Spider-Man_3
+        accessed: 2026-11-08
+        supports: [existence, release, continuity]
+        snippet: "Released in US and Canadian theaters Friday, May 4, 2007"
+    notes: >-
+      US release 2007-05-04. The Tokyo premiere (2007-04-16), the Tribeca premiere
+      (2007-04-30) and earlier international openings don't count under the
+      country-of-origin rule.
+
+  - id: spider-man-no-way-home
+    title: "Spider-Man: No Way Home"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2021-12-17
+    citations:
+      - url: https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home
+        accessed: 2026-11-08
+        supports: [existence, release, continuity]
+        snippet: "Opened in the United States on December 17 in 4,325 theaters"
+      - url: https://en.wikipedia.org/wiki/Spider-Man_(2002_film)
+        accessed: 2026-11-08
+        supports: [continuity]
+        snippet: "Maguire and Dafoe reprised their roles in No Way Home"
+    notes: >-
+      Crossover from the Marvel Cinematic Universe (Columbia Pictures with Marvel
+      Studios): included because this continuity's Peter Parker appears; the rest of
+      the MCU is excluded. US release 2021-12-17; the 2021-12-13 Los Angeles premiere
+      doesn't count.
+
+rows:
+  - work: spider-man
+    label: Spider-Man
+  - work: spider-man-tnas-s1
+    label: "Spider-Man: The New Animated Series (Season 1) †"
+  - work: spider-man-2
+    label: Spider-Man 2
+  - work: spider-man-3
+    label: Spider-Man 3
+  - work: spider-man-no-way-home
+    label: "Spider-Man: No Way Home"
+
+upcoming: []
+
+exclusions:
+  - {title: The Amazing Spider-Man, reason: 2012 reboot in a separate continuity}
+  - {title: The Amazing Spider-Man 2, reason: Sequel to the 2012 reboot; separate continuity}
+  - {title: "Spider-Man: Homecoming", reason: MCU film; only the No Way Home crossover belongs here}
+  - {title: "Spider-Man: Far From Home", reason: MCU film; only the No Way Home crossover belongs here}
+  - {title: "Spider-Man: Brand New Day", reason: MCU film in a different continuity}
+  - {title: "Spider-Man: Across the Spider-Verse", reason: Separate animated continuity; uses only archival footage from Spider-Man (2002)}
+  - {title: "Spider-Man: Into the Spider-Verse", reason: Separate animated continuity}
+  - {title: Madame Web, reason: Sony's Spider-Man Universe film; reuses archival Spider-Man 2 footage only}
+  - {title: Spider-Man 2.1, reason: Extended cut of Spider-Man 2 (about eight minutes added)}
+  - {title: "Spider-Man 3: Editor's Cut", reason: Alternate cut of Spider-Man 3 released on Blu-ray in 2017}
+  - {title: "Spider-Man: No Way Home – The More Fun Stuff Version", reason: Extended theatrical re-release}
+  - {title: Spider-Man 4 (Sam Raimi), reason: Cancelled by Sony in 2010; never made}
+  - {title: Spider-Man/Men in Black II Double-Bill, reason: "Theatrical re-release, not a new work"}
+  - {title: "Spider-Man: The Movie (video game)", reason: Video game tie-in; not screen media}
+
+checks:
+  - {type: present, rule: crossover, work: spider-man-no-way-home, note: "MCU film featuring this continuity's Peter Parker"}
+  - {type: present, rule: semi_canon, work: spider-man-tnas-s1, note: Made as the film's continuation and later contradicted by Spider-Man 2}
+  - {type: absent, rule: scope_continuity, title: The Amazing Spider-Man}
+  - {type: absent, rule: scope_continuity, title: "Spider-Man: Homecoming", note: The rest of the crossover's continuity stays out}
+
+notes:
+  - "Input matched the 2002 Sam Raimi film Spider-Man; the continuity is Sony's Raimi trilogy."
+  - "Spider-Man: The New Animated Series is included as semi-canon (canon_unclear): it was produced as a continuation of the 2002 film but is contradicted by Spider-Man 2."
+  - "No official narrative shorts, in-universe promotional videos or narrative disc extras were found for this continuity; disc extras and extended cuts are excluded."
+  - "Spider-Man: The New Animated Series was animated in Canada by Mainframe Entertainment for Sony; treated as US-origin because it was a Sony Pictures Television production that premiered on MTV."
+  - "No titles in this continuity are officially announced as upcoming."
