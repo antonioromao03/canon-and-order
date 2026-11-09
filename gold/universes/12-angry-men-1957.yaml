@@ -1,0 +1,73 @@
+schema_version: 1
+id: 12-angry-men-1957
+input:
+  title: "12 Angry Men"
+  year: "1957"
+status: verified
+split: test
+cutoff: 2026-11-30
+continuity: >-
+  Sidney Lumet's 1957 feature film 12 Angry Men (Orion-Nova Productions, released
+  by United Artists), a standalone title with no sequels, prequels, spinoffs or
+  official narrative shorts. The 1954 Studio One teleplay it adapts, the 1997 TV
+  remake and all foreign versions are separate productions outside this file.
+seeded_from_draft: true
+annotator: António Romão
+annotated_on: 2026-11-09
+time_spent_minutes: 30
+
+works:
+  - id: 12-angry-men
+    title: 12 Angry Men
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 1957-04-10
+    flags: [date_conflict]
+    citations:
+      - url: https://catalog.afi.com/Catalog/moviedetails/53690
+        accessed: 2026-11-09
+        supports: [existence, release, continuity]
+        snippet: "Los Angeles opening 10 Apr 1957; New York opening 13 Apr 1957"
+      - url: https://en.wikipedia.org/wiki/12_Angry_Men_(1957_film)
+        accessed: 2026-11-09
+        supports: [existence, release, continuity]
+        snippet: "Premiered April 10, 1957 at the Fox Wilshire Theater; distributed by United Artists"
+      - url: https://cordcuttersnews.com/?p=229781
+        accessed: 2026-11-09
+        supports: [release]
+        snippet: "United Artists released the film April 10, 1957"
+    notes: >-
+      Dated by the Los Angeles opening at the Fox Wilshire Theater (1957-04-10), which
+      sources describe both as the premiere and as the release date; the New York
+      opening at the Capitol was 1957-04-13 and AFI gives the general release only as
+      "April 1957". Flagged date_conflict because sources don't make clear whether the
+      10 April opening was a public run or a premiere event.
+
+rows:
+  - work: 12-angry-men
+    label: 12 Angry Men
+
+upcoming: []
+
+exclusions:
+  - {title: Twelve Angry Men (1954 Studio One teleplay), reason: Earlier live CBS television production of the same script; a separate production the film adapts}
+  - {title: 12 Angry Men (1997), reason: TV remake directed by William Friedkin; separate continuity}
+  - {title: Die zwölf Geschworenen (1963), reason: German television adaptation; foreign version}
+  - {title: Doce hombres sin piedad (1973), reason: Spanish television adaptation; foreign version}
+  - {title: Ek Ruka Hua Faisla (1986), reason: Hindi remake; foreign adaptation}
+  - {title: 12 (2007), reason: Russian remake by Nikita Mikhalkov; foreign adaptation}
+  - {title: 12 Citizens (2015), reason: Chinese remake; foreign adaptation}
+  - {title: Juror 8 (2019), reason: South Korean film inspired by the story; foreign adaptation}
+  - {title: "Beyond a Reasonable Doubt: Making 12 Angry Men", reason: Behind-the-scenes featurette on home release; not narrative}
+  - {title: Twelve Angry Men (stage play), reason: Stage adaptation; not a screen work}
+
+checks:
+  - {type: present, rule: scope_continuity, work: 12-angry-men, note: The standalone film itself must appear}
+  - {type: absent, rule: scope_continuity, title: 12 Angry Men (1997), note: TV remake is a separate continuity}
+  - {type: absent, rule: scope_continuity, title: Twelve Angry Men (1954 Studio One teleplay), note: The source teleplay is a separate production}
+  - {type: absent, rule: scope_continuity, title: 12 (2007), note: Foreign remake is out}
+
+notes:
+  - "Standalone title: one work; no sequels, official shorts or narrative extras found."
+  - "Release date: 1957-04-10 Los Angeles opening used as first public US theatrical date; if that counts only as a premiere, the New York opening on 1957-04-13 is the next candidate."
