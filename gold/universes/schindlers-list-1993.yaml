@@ -1,0 +1,61 @@
+schema_version: 1
+id: schindlers-list-1993
+input:
+  title: "Schindler's List"
+  year: "1993"
+status: verified
+split: dev
+cutoff: 2026-11-30
+continuity: >-
+  Steven Spielberg's 1993 Universal Pictures film Schindler's List, a standalone
+  title with no sequels, prequels, spinoffs or official narrative shorts; the
+  universe is the single film.
+seeded_from_draft: true
+annotator: António Romão
+annotated_on: 2026-11-09
+time_spent_minutes: 30
+
+works:
+  - id: schindlers-list
+    title: "Schindler's List"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 1993-12-15
+    citations:
+      - url: https://catalog.afi.com/Catalog/moviedetails/67172
+        accessed: 2026-11-09
+        supports: [existence, release, continuity]
+        snippet: "Opened 15 Dec 1993 in New York and Los Angeles"
+      - url: https://www.the-numbers.com/movie/Schindlers-List-(1993)
+        accessed: 2026-11-09
+        supports: [release]
+        snippet: "Domestic limited release Dec 15, 1993; wide expansion Feb 4, 1994"
+    notes: >-
+      Dated by the first public US theatrical run (limited opening in New York and
+      Los Angeles, 1993-12-15). The Washington, D.C. premiere (1993-11-30) and the
+      Los Angeles benefit premiere (1993-12-09) are premieres and don't count. The
+      film widened gradually; The Numbers lists the wide expansion as 1994-02-04.
+
+rows:
+  - work: schindlers-list
+    label: "Schindler's List"
+
+upcoming: []
+
+exclusions:
+  - {title: Voices from the List (2004), reason: "Documentary of survivor testimonies on the 2004 DVD; real-world documentary, not narrative"}
+  - {title: Shoah Foundation tour (2004 DVD extra), reason: Behind-the-scenes featurette about a real organisation; not narrative}
+  - {title: "Schindler's List (1994 reissue)", reason: Theatrical reissue of the same film after its home-video release}
+  - {title: "Schindler's List (25th anniversary re-release, 2018)", reason: Remastered theatrical re-release of the same film}
+  - {title: "Schindler's Ark", reason: Thomas Keneally's 1982 novel the film adapts; not a screen work}
+  - {title: Schindler (1983 documentary), reason: Separate real-world documentary by Jon Blair; not part of this film}
+
+checks:
+  - {type: present, rule: scope_continuity, work: schindlers-list, note: The standalone film itself must appear}
+  - {type: absent, rule: scope_continuity, title: Voices from the List (2004), note: Documentary home-release extra is out of scope}
+  - {type: absent, rule: scope_continuity, title: "Schindler's List (25th anniversary re-release, 2018)", note: Re-releases and remasters are out}
+
+notes:
+  - "Standalone title: one work, no official shorts or narrative extras found, so no rows beyond the film."
+  - "Release date: used the 1993-12-15 limited US opening as the first date the general public could watch it; if the evaluation reads 'wide theatrical' strictly, the wide expansion was 1994-02-04 (The Numbers)."

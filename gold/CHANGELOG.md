@@ -11,3 +11,4 @@ numbers.
 - 2026-11-08: `the-dark-knight-2008` verified (dev): piece dates 2–4 added, citations added to every work, stale draft notes removed.
 - 2026-11-08: `breaking-bad-2008` added and verified (dev), seeded from a draft: citations checked, parents and companion rows settled, checks trimmed to five.
 - 2026-11-08: `spider-man-2002` added and verified (dev), annotated from scratch (no draft seed): the baseline for the draft error rate.
+- 2026-11-09: `schindlers-list-1993` added and verified (dev), seeded from a draft: citations and dates checked, stale draft note removed.
