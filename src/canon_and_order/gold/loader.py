@@ -7,7 +7,7 @@ from pathlib import Path
 import yaml
 from pydantic import ValidationError
 
-from canon_and_order.gold.schema import GoldUniverse
+from canon_and_order.gold.schema import GoldUniverse, ProbeSet
 
 
 class GoldFileError(ValueError):
@@ -32,3 +32,17 @@ def gold_files(directory: Path) -> list[Path]:
 
 def load_gold_dir(directory: Path) -> list[GoldUniverse]:
     return [load_gold_file(path) for path in gold_files(directory)]
+
+
+def load_probe_file(path: Path, universes: Path) -> ProbeSet:
+    """Load the resolution probe set and check it against the universes in ``universes``."""
+    try:
+        with path.open(encoding="utf-8") as handle:
+            probes = ProbeSet.model_validate(yaml.safe_load(handle))
+    except (OSError, yaml.YAMLError, ValidationError) as error:
+        raise GoldFileError(f"{path}: {error}") from error
+    splits = {universe.id: universe.split for universe in load_gold_dir(universes)}
+    errors = probes.universe_errors(splits)
+    if errors:
+        raise GoldFileError(f"{path}: {'; '.join(errors)}")
+    return probes

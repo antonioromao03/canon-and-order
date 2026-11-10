@@ -38,4 +38,4 @@ jobs:
         run: uv run pytest
 
       - name: Validate gold set
-        run: uv run python -m canon_and_order.gold validate gold/universes gold/template.yaml
+        run: uv run python -m canon_and_order.gold validate gold/universes gold/probes.yaml gold/template.yaml

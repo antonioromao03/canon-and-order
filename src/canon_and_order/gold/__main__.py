@@ -1,5 +1,8 @@
 """Validate gold files: ``python -m canon_and_order.gold validate [paths...]``.
 
+A path named ``probes.yaml`` is the resolution probe set, checked against the
+``universes`` directory next to it; every other file is a universe file.
+
 Runs in CI and as a pre-commit hook, so a broken annotation never reaches main.
 """
 
@@ -11,9 +14,10 @@ from collections import Counter
 from collections.abc import Sequence
 from pathlib import Path
 
-from canon_and_order.gold.loader import GoldFileError, gold_files, load_gold_file
+from canon_and_order.gold.loader import GoldFileError, gold_files, load_gold_file, load_probe_file
 
-DEFAULT_DIR = Path("gold/universes")
+DEFAULT_PATHS = [Path("gold/universes"), Path("gold/probes.yaml")]
+PROBE_FILE_NAME = "probes.yaml"
 
 
 def _expand(paths: Sequence[Path]) -> list[Path]:
@@ -31,6 +35,16 @@ def validate(paths: Sequence[Path]) -> int:
     failures = 0
     tally: Counter[str] = Counter()
     for path in files:
+        if path.name == PROBE_FILE_NAME:
+            try:
+                probes = load_probe_file(path, path.parent / "universes")
+            except GoldFileError as error:
+                failures += 1
+                print(f"FAIL {error}", file=sys.stderr)
+                continue
+            tally[f"probes/{probes.status}"] += 1
+            print(f"ok   {'probes':<40} {'':<4} {probes.status:<8} {len(probes.probes):>3} probes")
+            continue
         try:
             universe = load_gold_file(path)
         except GoldFileError as error:
@@ -51,7 +65,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="python -m canon_and_order.gold")
     commands = parser.add_subparsers(dest="command", required=True)
     check = commands.add_parser("validate", help="validate gold files or directories")
-    check.add_argument("paths", nargs="*", type=Path, default=[DEFAULT_DIR])
+    check.add_argument("paths", nargs="*", type=Path, default=DEFAULT_PATHS)
     args = parser.parse_args(argv)
     return validate(args.paths)
 

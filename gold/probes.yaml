@@ -1,0 +1,134 @@
+# Resolution probe set: inputs that test how a title and year resolve to a universe.
+# Scored as resolution accuracy (docs/evaluation.md). Each probe shares the split of the
+# universe it names, so test universes stay held out; the validator enforces this.
+#
+# expected:
+#   universe   resolves to this gold universe
+#   duplicate  another title from this gold universe: reuse it, don't research it again
+#   other      a real universe outside the gold set (e.g. another continuity); must not
+#              resolve to any gold universe
+#   not_found  no screen release matches
+
+schema_version: 1
+status: verified
+annotator: António Romão
+annotated_on: 2026-11-10
+
+probes:
+  # --- dev ---------------------------------------------------------------------------
+  - id: breking-bad
+    input: {title: Breking Bad, year: "2008"}
+    category: misspelling
+    split: dev
+    expected: universe
+    universe: breaking-bad-2008
+
+  - id: shindlers-list
+    input: {title: Shindlers List, year: "1993"}
+    category: misspelling
+    split: dev
+    expected: universe
+    universe: schindlers-list-1993
+    note: Misspelt and missing the apostrophe.
+
+  - id: the-dark-knight-no-year
+    input: {title: The Dark Knight}
+    category: missing_year
+    split: dev
+    expected: universe
+    universe: the-dark-knight-2008
+    note: No other screen work has this exact title.
+
+  - id: breaking-bad-2007
+    input: {title: Breaking Bad, year: "2007"}
+    category: wrong_year
+    split: dev
+    expected: universe
+    universe: breaking-bad-2008
+    note: Off by one; the series premiered in January 2008.
+
+  - id: better-call-saul-2015
+    input: {title: Better Call Saul, year: "2015"}
+    category: duplicate
+    split: dev
+    expected: duplicate
+    universe: breaking-bad-2008
+
+  - id: the-dark-knight-rises-2012
+    input: {title: The Dark Knight Rises, year: "2012"}
+    category: duplicate
+    split: dev
+    expected: duplicate
+    universe: the-dark-knight-2008
+
+  - id: batman-1989
+    input: {title: Batman, year: "1989"}
+    category: other_continuity
+    split: dev
+    expected: other
+    note: Burton's film starts a separate continuity (an exclusion in the-dark-knight-2008).
+
+  - id: a-confederacy-of-dunces
+    input: {title: A Confederacy of Dunces, year: "1980"}
+    category: no_adaptation
+    split: dev
+    expected: not_found
+    note: Pulitzer-winning novel; film attempts since the 1980s never got made, and the 2015 stage version isn't a screen release.
+
+  # --- test --------------------------------------------------------------------------
+  - id: the-godfathr
+    input: {title: The Godfathr, year: "1972"}
+    category: misspelling
+    split: test
+    expected: universe
+    universe: the-godfather-1972
+
+  - id: the-godfather-no-year
+    input: {title: The Godfather}
+    category: missing_year
+    split: test
+    expected: universe
+    universe: the-godfather-1972
+
+  - id: the-matrix-2000
+    input: {title: The Matrix, year: "2000"}
+    category: wrong_year
+    split: test
+    expected: universe
+    universe: the-matrix-1999
+    note: Off by one; released in March 1999.
+
+  - id: prometheus-2012
+    input: {title: Prometheus, year: "2012"}
+    category: duplicate
+    split: test
+    expected: duplicate
+    universe: alien-1979
+
+  - id: dune-prophecy-2024
+    input: {title: "Dune: Prophecy", year: "2024"}
+    category: duplicate
+    split: test
+    expected: duplicate
+    universe: dune-2021
+
+  - id: dune-1984
+    input: {title: Dune, year: "1984"}
+    category: other_continuity
+    split: test
+    expected: other
+    note: Lynch's film is an earlier adaptation (an exclusion in dune-2021).
+
+  - id: the-lord-of-the-rings-1978
+    input: {title: The Lord of the Rings, year: "1978"}
+    category: other_continuity
+    split: test
+    expected: other
+    note: Bakshi's animated film (an exclusion in the-lord-of-the-rings-2001).
+
+  - id: infinite-jest
+    input: {title: Infinite Jest, year: "1996"}
+    category: no_adaptation
+    split: test
+    expected: not_found
+    note: Novel never adapted for the screen; The End of the Tour (2015) adapts a different book about its author.

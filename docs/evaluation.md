@@ -6,15 +6,18 @@ order), with extras reported separately from films and seasons.
 
 ## Gold Set
 
-- v1: 12 universes, frozen at a cut-off date (proposed 2026-11-30). Predictions are
-  filtered to the same date before scoring.
+- v1: 12 universes, frozen at the cut-off date 2026-11-30. Predictions are filtered to
+  the same date before scoring.
 - **Dev** (4): Breaking Bad (2008), The Dark Knight (2008), Spider-Man (2002),
   Schindler's List (1993). Breaking Bad and The Dark Knight appear as examples in the
   product spec, so they can never be test universes.
 - **Test** (8): 12 Angry Men (1957), The Godfather (1972), Dune (2021), The Matrix (1999),
   Sherlock (2010), Wednesday (2022), The Lord of the Rings (2001), Alien (1979).
-- A **resolution probe set** of about 15 inputs (misspellings, missing or wrong years,
-  duplicates, a title with no screen adaptation) with expected outcomes.
+- A **resolution probe set** ([gold/probes.yaml](../gold/probes.yaml)) of 16 inputs
+  (misspellings, missing or wrong years, duplicates, other continuities, titles with no
+  screen adaptation). Each expects a gold universe, a duplicate of one, a universe
+  outside the gold set (`other`) or "not found", and shares the split of the universe it
+  names.
 - Annotated with [gold/ANNOTATION_GUIDE.md](../gold/ANNOTATION_GUIDE.md); versioned in
   [gold/CHANGELOG.md](../gold/CHANGELOG.md). Only `status: verified` files are scored.
 
@@ -38,7 +41,7 @@ audited by hand to measure the matcher itself.
 | Order | Rows | Kendall tau-b over matched rows; share of universes with the exact sequence |
 | Rule compliance | Checks | Pass rate of each gold file's `checks`, per rule |
 | Citation support rate | Works | Cited snapshot contains title and date (automated; 30 audited by hand) |
-| Resolution accuracy | Inputs | Correct universe, "not found" or duplicate on the probe set |
+| Resolution accuracy | Inputs | Expected outcome on the probe set (universe, duplicate, other, not found), by category |
 | Cost, latency, tokens | Runs | Mean, p50, p95 per universe; shadow cost at list prices |
 
 Unmatched predictions are adjudicated as *invented*, *real but out of scope*, or *gold

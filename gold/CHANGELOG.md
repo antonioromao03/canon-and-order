@@ -4,7 +4,11 @@ Every change to a file in `gold/universes/` gets a line here. Evaluation results
 the gold version they were scored against, so a correction never silently changes old
 numbers.
 
-## v0 (Unreleased)
+## v1 (2026-11-10)
+
+Twelve verified universes (4 dev, 8 test) and the resolution probe set, cut-off
+2026-11-30. After the cut-off, check the twelve universes for releases between
+2026-11-10 and 2026-11-30; if any, add them and release v1.1.
 
 - 2026-11-06: schema v1, template and annotation guide.
 - 2026-11-06: `the-dark-knight-2008` added as a draft seeded from the artifact timeline (unverified).
@@ -31,3 +35,5 @@ numbers.
 - 2026-11-10: `wednesday-2022`: order checks moved to `rule: sorting`; TikTok exclusion reason corrected (social post); Season 3 wrap sourced.
 - 2026-11-10: `the-lord-of-the-rings-2001`: present check added for The War of the Rohirrim; mirror link replaced with Wikipedia; Shadow of the Past announcement sourced.
 - 2026-11-10: `alien-1979`: order check moved to `rule: sorting`; Prometheus viral video 5 moved into the first row (videos 1–5), since its month-only date sorts before the film.
+- 2026-11-10: resolution probe set added (`gold/probes.yaml`, 16 probes) with its schema and validation.
+- 2026-11-10: draft error rate dropped for v1: the draft-seeded files recorded no error counts.

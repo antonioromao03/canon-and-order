@@ -199,3 +199,78 @@ class GoldUniverse(Model):
             if any(piece.release is None for piece in work.pieces):
                 errors.append(f"{work.id}: verified works need a date for every piece")
         return errors
+
+
+# --- Resolution probe set (gold/probes.yaml) ---------------------------------------------
+
+
+class ProbeCategory(StrEnum):
+    """What the probe input tests, so resolution accuracy can be reported per category."""
+
+    MISSPELLING = "misspelling"
+    MISSING_YEAR = "missing_year"
+    WRONG_YEAR = "wrong_year"
+    DUPLICATE = "duplicate"  # another title from a universe already in the gold set
+    OTHER_CONTINUITY = "other_continuity"  # the year picks a different continuity
+    NO_ADAPTATION = "no_adaptation"
+
+
+class Outcome(StrEnum):
+    UNIVERSE = "universe"  # resolves to this gold universe
+    DUPLICATE = "duplicate"  # belongs to this gold universe: reuse it, don't research it again
+    OTHER = "other"  # a real universe outside the gold set; must not map to a gold universe
+    NOT_FOUND = "not_found"  # no screen release matches
+
+
+class Probe(Model):
+    id: str = Field(pattern=SLUG_PATTERN)
+    input: Input
+    category: ProbeCategory
+    split: Split
+    expected: Outcome
+    universe: str | None = Field(default=None, pattern=SLUG_PATTERN)
+    note: str = ""
+
+    @model_validator(mode="after")
+    def _universe_matches_outcome(self) -> Probe:
+        needs_universe = self.expected in (Outcome.UNIVERSE, Outcome.DUPLICATE)
+        if needs_universe and self.universe is None:
+            raise ValueError(f"{self.id}: expected '{self.expected}' needs a universe")
+        if not needs_universe and self.universe is not None:
+            raise ValueError(f"{self.id}: expected '{self.expected}' takes no universe")
+        return self
+
+
+class ProbeSet(Model):
+    schema_version: Literal[1] = 1
+    status: Status
+    annotator: str | None = None
+    annotated_on: dt.date | None = None
+    probes: list[Probe]
+
+    @model_validator(mode="after")
+    def _check_integrity(self) -> ProbeSet:
+        errors: list[str] = []
+        ids = [probe.id for probe in self.probes]
+        duplicates = sorted({probe_id for probe_id in ids if ids.count(probe_id) > 1})
+        if duplicates:
+            errors.append(f"duplicate probe ids: {', '.join(duplicates)}")
+        if self.status is Status.VERIFIED and (self.annotator is None or self.annotated_on is None):
+            errors.append("verified probe sets need annotator and annotated_on")
+        if errors:
+            raise ValueError("; ".join(errors))
+        return self
+
+    def universe_errors(self, splits: dict[str, Split]) -> list[str]:
+        """Probes must name existing gold universes and share their split (no test leakage)."""
+        errors: list[str] = []
+        for probe in self.probes:
+            if probe.universe is None:
+                continue
+            if probe.universe not in splits:
+                errors.append(f"{probe.id}: unknown universe '{probe.universe}'")
+            elif splits[probe.universe] is not probe.split:
+                errors.append(
+                    f"{probe.id}: split '{probe.split}' differs from universe '{probe.universe}'"
+                )
+        return errors
