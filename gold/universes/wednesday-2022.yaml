@@ -1,0 +1,146 @@
+schema_version: 1
+id: wednesday-2022
+input:
+  title: "Wednesday"
+  year: "2022"
+status: verified
+split: test
+cutoff: 2026-11-30
+continuity: >-
+  Netflix's live-action series Wednesday (2022–), created by Alfred Gough and Miles Millar and
+  produced by MGM Television, following Wednesday Addams at Nevermore Academy: its seasons and
+  Netflix's in-universe Nevermore Academy recruitment promos. Other Addams Family films and series
+  are separate continuities.
+seeded_from_draft: true
+annotator: António Romão
+annotated_on: 2026-11-10
+time_spent_minutes: 60
+
+works:
+  - id: nevermore-recruitment-2022
+    title: Nevermore Academy Recruitment Video (Principal Weems)
+    kind: promotional_content
+    channel: web
+    country: US
+    release: 2022-09-21
+    parent: wednesday-s1
+    flags: [descriptive_name]
+    citations:
+      - url: https://nerdist.com/article/wednesday-addams-series-nevermore-academy-recruitment-video-website-netflix/
+        accessed: 2026-11-10
+        supports: [existence, release, parent]
+        snippet: "Recruitment video and website for Nevermore Academy, published September 21, 2022"
+      - url: https://www.joblo.com/wednesday-nevermore-academy-promo/
+        accessed: 2026-11-10
+        supports: [existence, release, canon]
+        snippet: "Principal Weems hosts a promo urging viewers to apply to Nevermore"
+    notes: >-
+      In-character recruitment video hosted by Principal Weems, launched with the NevermoreAcademy.com
+      site to promote Season 1 (supplementary, promotional_content), so parent is wednesday-s1. A single
+      piece released two months before the premiere, so not a companion row: ordinary row in date order,
+      before Season 1. No official title, so the name is descriptive.
+
+  - id: wednesday-s1
+    title: Wednesday (Season 1)
+    kind: tv_season
+    channel: streaming
+    country: US
+    release: 2022-11-23
+    external_ids: {tmdb: "tv/119051/season/1"}
+    citations:
+      - url: https://www.tomsguide.com/news/wednesday-release-date-and-time-how-to-watch-online
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Season 1 premiered on Netflix November 23, 2022; all episodes at once"
+      - url: https://www.themoviedb.org/tv/119051-wednesday
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Season 1, 8 episodes, premiered November 23, 2022"
+    notes: All eight episodes released at once on Netflix, so no pieces. The 16 November 2022 Los Angeles premiere screening is not counted.
+
+  - id: nevermore-recruitment-2025
+    title: Nevermore Academy Recruitment Video (Principal Dort)
+    kind: promotional_content
+    channel: web
+    country: US
+    release: 2025-06-18
+    parent: wednesday-s2a
+    flags: [descriptive_name]
+    citations:
+      - url: https://www.vitalthrills.com/nevermore-academy-recruits-new-class-for-wednesday-season-2/
+        accessed: 2026-11-10
+        supports: [existence, release, parent]
+        snippet: "Netflix re-launched Nevermore recruitment site with new Principal Dort video"
+      - url: https://www.joblo.com/?p=846482
+        accessed: 2026-11-10
+        supports: [existence, release, canon]
+        snippet: "Steve Buscemi in character as Principal Dort invites viewers to apply"
+    notes: >-
+      In-character recruitment video with Principal Dort for the relaunched Nevermore Academy site,
+      promoting Season 2 (supplementary, promotional_content); parent is the first Season 2 part. A single
+      piece released seven weeks before the premiere, so not a companion row: ordinary row in date order,
+      before Season 2 Part 1. No official title, so the name is descriptive.
+
+  - id: wednesday-s2a
+    title: Wednesday (Season 2 - Part 1)
+    kind: tv_season
+    channel: streaming
+    country: US
+    release: 2025-08-06
+    citations:
+      - url: https://www.thewrap.com/wednesday-season-2-release-date-time-episodes-schedule
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Part 1, episodes 1–4, premiered August 6"
+    notes: Netflix presented Season 2 in two parts; Part 1 (Episodes 1–4) released all at once, so no pieces.
+
+  - id: wednesday-s2b
+    title: Wednesday (Season 2 - Part 2)
+    kind: tv_season
+    channel: streaming
+    country: US
+    release: 2025-09-03
+    citations:
+      - url: https://www.thewrap.com/wednesday-season-2-release-date-time-episodes-schedule
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Part 2, episodes 5–8, premieres September 3"
+    notes: Part 2 (Episodes 5–8) released all at once, so no pieces.
+
+rows:
+  - work: nevermore-recruitment-2022
+    label: Nevermore Academy Recruitment Video (Principal Weems)
+  - work: wednesday-s1
+    label: Wednesday (Season 1)
+  - work: nevermore-recruitment-2025
+    label: Nevermore Academy Recruitment Video (Principal Dort)
+  - work: wednesday-s2a
+    label: Wednesday (Season 2 - Part 1)
+  - work: wednesday-s2b
+    label: Wednesday (Season 2 - Part 2)
+
+upcoming:
+  - {title: Wednesday (Season 3), kind: tv_season, expected: "TBA"}
+
+exclusions:
+  - {title: The Addams Family (1964 TV series), reason: Earlier adaptation in a separate continuity}
+  - {title: The Addams Family (1991 film), reason: Separate film continuity}
+  - {title: Addams Family Values, reason: Sequel in the separate 1991 film continuity}
+  - {title: The New Addams Family, reason: Separate 1998 TV continuity}
+  - {title: The Addams Family (2019 animated film), reason: Separate animated continuity}
+  - {title: Uncle Fester spin-off, reason: Reported as in development only; not an officially announced title}
+  - {title: Thing's "Get Ready With Me" TikTok, reason: Behind-the-scenes premise set outside the story's continuity}
+  - {title: "The Dead Dance (Lady Gaga music video)", reason: "Music video, not narrative in-universe content"}
+  - {title: "Wednesday trailers, teasers and casting announcements", reason: Trailers and teasers are out of scope}
+
+checks:
+  - {type: before, rule: companion, first: nevermore-recruitment-2022, then: wednesday-s1, note: "Made for Season 1 but a single piece released before the premiere; ordinary row in date order"}
+  - {type: before, rule: companion, first: nevermore-recruitment-2025, then: wednesday-s2a, note: "Made for Season 2 but released weeks before Part 1; ordinary row in date order"}
+  - {type: absent, rule: scope_continuity, title: The Addams Family (1991 film)}
+  - {type: absent, rule: scope_continuity, title: The Addams Family (2019 animated film)}
+
+notes:
+  - Country of origin treated as US - an MGM Television production for Netflix (filmed in Romania and Ireland), released worldwide on Netflix at once.
+  - Season 2 is split into two works because Netflix presented it as Part 1 and Part 2, released four weeks apart.
+  - The two recruitment videos have no official titles; descriptive names are used.
+  - Season 3 is renewed and has wrapped filming, but Netflix has announced no date; a 2027 release is only reported, so expected is TBA.
