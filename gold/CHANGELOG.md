@@ -18,3 +18,4 @@ numbers.
 - 2026-11-10: `the-matrix-1999` added and verified (test), seeded from a draft: citations and dates checked; Animatrix split around The Matrix Reloaded, with piece 5 date unconfirmed.
 - 2026-11-10: `sherlock-2010` added and verified (test), seeded from a draft: citations and dates checked; unaired pilot kept as a semi-canon work.
 - 2026-11-10: `wednesday-2022` added and verified (test), seeded from a draft: citations and dates checked; Season 2 split into two parts as Netflix presented it.
+- 2026-11-10: `the-lord-of-the-rings-2001` added and verified (test), seeded from a draft: citations and dates checked; War of the Rohirrim treated as canon.

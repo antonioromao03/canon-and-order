@@ -1,0 +1,195 @@
+schema_version: 1
+id: the-lord-of-the-rings-2001
+input:
+  title: "The Lord of the Rings"
+  year: "2001"
+status: verified
+split: test
+cutoff: 2026-11-30
+continuity: >-
+  New Line Cinema / Warner Bros.' Middle-earth film continuity begun by Peter Jackson's
+  The Fellowship of the Ring (2001): the Lord of the Rings and Hobbit trilogies and the
+  anime prequel The War of the Rohirrim, which Warner Bros. connects to the films. Earlier
+  adaptations (Rankin/Bass, Bakshi, Soviet and Finnish versions), Amazon's The Rings of
+  Power, fan films, documentaries and games are separate or out of scope.
+seeded_from_draft: true
+annotator: António Romão
+annotated_on: 2026-11-10
+time_spent_minutes: 90
+
+works:
+  - id: fellowship-of-the-ring
+    title: "The Lord of the Rings: The Fellowship of the Ring"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2001-12-19
+    external_ids: {tmdb: "movie/120"}
+    citations:
+      - url: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "US release 19 December 2001; London premiere 10 December"
+      - url: https://www.themoviedb.org/movie/120-the-lord-of-the-rings-the-fellowship-of-the-ring
+        accessed: 2026-11-10
+        supports: [existence]
+    notes: >-
+      New Zealand–US co-production; treated as US because New Line Cinema financed,
+      produced and released it and its successor Warner Bros. holds the rights, so US
+      release dates are used for every film. The London premiere doesn't count.
+
+  - id: two-towers
+    title: "The Lord of the Rings: The Two Towers"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2002-12-18
+    external_ids: {tmdb: "movie/121"}
+    citations:
+      - url: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "US release 18 December 2002; New York premiere 5 December"
+      - url: https://www.themoviedb.org/movie/121-the-lord-of-the-rings-the-two-towers
+        accessed: 2026-11-10
+        supports: [existence]
+    notes: NZ–US co-production treated as US (see Fellowship). The premiere doesn't count.
+
+  - id: return-of-the-king
+    title: "The Lord of the Rings: The Return of the King"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2003-12-17
+    external_ids: {tmdb: "movie/122"}
+    citations:
+      - url: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "US release 17 December 2003; Wellington premiere 1 December"
+      - url: https://www.themoviedb.org/movie/122-the-lord-of-the-rings-the-return-of-the-king
+        accessed: 2026-11-10
+        supports: [existence]
+    notes: NZ–US co-production treated as US (see Fellowship). The Wellington premiere doesn't count.
+
+  - id: an-unexpected-journey
+    title: "The Hobbit: An Unexpected Journey"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2012-12-14
+    external_ids: {tmdb: "movie/49051"}
+    citations:
+      - url: https://en.wikipedia.org/wiki/The_Hobbit_(film_series)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "Released 14 December 2012; Wellington premiere 28 November 2012"
+      - url: https://www.themoviedb.org/movie/49051-the-hobbit-an-unexpected-journey
+        accessed: 2026-11-10
+        supports: [existence]
+    notes: >-
+      Prequel trilogy by the same filmmakers and studio. NZ–US co-production treated as US
+      (New Line / Warner Bros.), consistent with the trilogy; New Zealand's general release
+      came a little earlier but isn't used. The Wellington premiere doesn't count.
+
+  - id: desolation-of-smaug
+    title: "The Hobbit: The Desolation of Smaug"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2013-12-13
+    external_ids: {tmdb: "movie/57158"}
+    citations:
+      - url: https://en.wikipedia.org/wiki/The_Hobbit_(film_series)
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Released 13 December 2013; Los Angeles premiere 2 December"
+      - url: https://www.themoviedb.org/movie/57158-the-hobbit-the-desolation-of-smaug
+        accessed: 2026-11-10
+        supports: [existence]
+    notes: NZ–US co-production treated as US (see An Unexpected Journey). The premiere doesn't count.
+
+  - id: battle-of-the-five-armies
+    title: "The Hobbit: The Battle of the Five Armies"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2014-12-17
+    external_ids: {tmdb: "movie/122917"}
+    citations:
+      - url: https://en.wikipedia.org/wiki/The_Hobbit_(film_series)
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Released 17 December 2014; London premiere 1 December"
+      - url: https://www.themoviedb.org/movie/122917-the-hobbit-the-battle-of-the-five-armies
+        accessed: 2026-11-10
+        supports: [existence]
+    notes: NZ–US co-production treated as US (see An Unexpected Journey). The premiere doesn't count.
+
+  - id: war-of-the-rohirrim
+    title: "The Lord of the Rings: The War of the Rohirrim"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2024-12-13
+    external_ids: {tmdb: "movie/839033"}
+    citations:
+      - url: https://www.wikiwand.com/en/articles/The_Lord_of_the_Rings:_The_War_of_the_Rohirrim
+        accessed: 2026-11-10
+        supports: [existence, release, canon, continuity]
+        snippet: "Released in the US December 13, 2024; connected to the trilogy's continuity"
+      - url: https://www.themoviedb.org/movie/839033-the-lord-of-the-rings-the-war-of-the-rohirrim
+        accessed: 2026-11-10
+        supports: [existence]
+    notes: >-
+      Anime prequel set about two centuries before the trilogy. Treated as canon: Warner
+      Bros. presents it as connected to the Jackson films, with Jackson-film writer Philippa
+      Boyens producing, Miranda Otto reprising Éowyn as narrator and designs based on the
+      films. Japanese-animated but produced and released by Warner Bros. Animation /
+      Warner Bros. Pictures, so treated as US. The 2024-12-03 London premiere doesn't count.
+
+rows:
+  - work: fellowship-of-the-ring
+    label: "The Lord of the Rings: The Fellowship of the Ring"
+  - work: two-towers
+    label: "The Lord of the Rings: The Two Towers"
+  - work: return-of-the-king
+    label: "The Lord of the Rings: The Return of the King"
+  - work: an-unexpected-journey
+    label: "The Hobbit: An Unexpected Journey"
+  - work: desolation-of-smaug
+    label: "The Hobbit: The Desolation of Smaug"
+  - work: battle-of-the-five-armies
+    label: "The Hobbit: The Battle of the Five Armies"
+  - work: war-of-the-rohirrim
+    label: "The Lord of the Rings: The War of the Rohirrim"
+
+upcoming:
+  - {title: "The Lord of the Rings: The Hunt for Gollum", kind: feature_film, expected: "2027-12-17"}
+  - {title: "The Lord of the Rings: Shadow of the Past", kind: feature_film, expected: "TBA"}
+
+exclusions:
+  - {title: "The Lord of the Rings: The Rings of Power", reason: "Amazon series licensed separately from the Tolkien Estate; a different continuity"}
+  - {title: "The Hobbit (1977 TV special)", reason: "Rankin/Bass adaptation in a separate continuity"}
+  - {title: "The Lord of the Rings (1978 animated film)", reason: "Ralph Bakshi adaptation in a separate continuity"}
+  - {title: "The Return of the King (1980 TV film)", reason: "Rankin/Bass adaptation in a separate continuity"}
+  - {title: "The Hobbit (1966 short)", reason: "Gene Deitch adaptation in a separate continuity"}
+  - {title: "Khraniteli (1991)", reason: "Soviet television adaptation; foreign adaptation"}
+  - {title: "Hobitit (1993)", reason: "Finnish Yle miniseries; foreign adaptation"}
+  - {title: "The Hunt for Gollum (2009 fan film)", reason: "Fan work"}
+  - {title: "Born of Hope (2009)", reason: "Fan work"}
+  - {title: "Extended Editions of the Lord of the Rings and Hobbit films", reason: "Extended cuts of works already listed"}
+  - {title: "The Lord of the Rings / The Hobbit appendices and making-of documentaries", reason: "Documentaries and featurettes"}
+  - {title: "Air New Zealand Middle-earth safety videos (2012, 2014)", reason: "Made by an airline, not the rights holder, and set outside the films' continuity"}
+  - {title: "The Lord of the Rings: Reunited Apart (2020)", reason: "Real-world cast reunion, not narrative content"}
+
+checks:
+  - {type: absent, rule: scope_continuity, title: "The Lord of the Rings: The Rings of Power", note: Separate Amazon continuity despite the shared title}
+  - {type: absent, rule: scope_continuity, title: "The Lord of the Rings (1978 animated film)"}
+  - {type: absent, rule: scope_continuity, title: "The Hobbit (1977 TV special)"}
+
+notes:
+  - "Input year 2001 picks Peter Jackson's New Line film continuity (The Fellowship of the Ring, 2001), not Ralph Bakshi's 1978 film or Amazon's series."
+  - All films are New Zealand–US co-productions or US–Japan productions released by New Line / Warner Bros.; US general release dates are used throughout, and premieres are ignored.
+  - "No official narrative shorts, web series or in-universe promotional pieces from the rights holder were found; production diaries, appendices and extended editions are excluded."
+  - "The Lord of the Rings: Shadow of the Past was announced in March 2026 (Stephen Colbert co-writing, set after The Return of the King) with no release date."
