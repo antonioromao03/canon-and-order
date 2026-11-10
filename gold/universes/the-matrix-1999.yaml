@@ -1,0 +1,194 @@
+schema_version: 1
+id: the-matrix-1999
+input:
+  title: "The Matrix"
+  year: "1999"
+status: verified
+split: test
+cutoff: 2026-11-30
+continuity: >-
+  Warner Bros.' Matrix continuity begun by the Wachowskis' The Matrix (1999): the four
+  live-action films and The Animatrix shorts. Games, comics, documentaries, parodies and
+  re-releases are outside this file; no reboot or separate screen continuity exists.
+seeded_from_draft: true
+annotator: António Romão
+annotated_on: 2026-11-10
+time_spent_minutes: 90
+
+works:
+  - id: the-matrix
+    title: The Matrix
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 1999-03-31
+    external_ids: {tmdb: "movie/603"}
+    citations:
+      - url: https://www.boxofficemojo.com/franchise/fr3142029061
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "The Matrix opened in US theaters March 31, 1999"
+      - url: https://en.wikipedia.org/wiki/The_Matrix_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, continuity]
+        snippet: "Franchise of four films beginning with The Matrix (1999)"
+    notes: >-
+      US/Australian co-production (filmed in Sydney with Village Roadshow); treated as a US
+      film because Warner Bros. produced and released it and holds the rights. The
+      1999-03-24 Westwood premiere doesn't count.
+
+  - id: the-animatrix
+    title: The Animatrix
+    kind: short_film
+    channel: web
+    country: US
+    release: 2003-02-04
+    pieces:
+      - {number: 1, release: 2003-02-04}
+      - {number: 2, release: "2003-03"}
+      - {number: 3, release: 2003-03-21}
+      - {number: 4, release: 2003-04-04}
+      - {number: 5, release: 2003-05-06}
+      - {number: 6, release: 2003-06-03}
+      - {number: 7, release: 2003-06-03}
+      - {number: 8, release: 2003-06-03}
+      - {number: 9, release: 2003-06-03}
+    flags: [piece_dates_unconfirmed]
+    citations:
+      - url: https://www.awn.com/news/animatrix-dvd-release-date
+        accessed: 2026-11-10
+        supports: [existence, release, pieces]
+        snippet: "Four shorts streamed free before the June 3, 2003 DVD release"
+      - url: https://www.animenewsnetwork.com/news/2003-03-06/animatrix-program-available
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "Program reported available on the Matrix website, March 6, 2003"
+      - url: https://www.matrixfans.net/a-detective-story-is-online
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "A Detective Story went online April 4, 2003"
+      - url: https://www.themoviedb.org/collection/1266219-the-animatrix
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "Lists Second Renaissance Part II as May 6, 2003"
+      - url: https://en.wikipedia.org/wiki/The_Animatrix
+        accessed: 2026-11-10
+        supports: [existence, pieces, canon, continuity]
+        snippet: "Osiris shown with Dreamcatcher; rest first on June 3, 2003 home video"
+    notes: >-
+      Nine shorts conceived and overseen by the Wachowskis, set in the films' world;
+      treated as canon. Supplementary (short_film). Pieces in release order: 1 The Second
+      Renaissance Part I (online 2003-02-04); 2 Program (online; ANN reported it available
+      2003-03-06, exact upload day unconfirmed, so month only; TMDB wrongly lists it as a
+      DVD-only June 3 title); 3 Final Flight of the Osiris (in US theaters before
+      Dreamcatcher, 2003-03-21); 4 A Detective Story (online 2003-04-04); 5 The Second
+      Renaissance Part II (online; AWN says May 2003, TMDB and IMDb give 2003-05-06, no
+      primary source for the day); 6–9 Kid's Story, World Record, Beyond, Matriculated
+      (first released on the US DVD/VHS, 2003-06-03, numbered in the DVD's running order).
+      A US–Japan co-production (Japanese studios, Warner Home Video); treated as US because
+      Warner Bros. released it and the US release came first. Not made for a TV season, so
+      no parent. Split around The Matrix Reloaded (single release) per the splitting rule:
+      pieces 1–5 came out before 2003-05-15, pieces 6–9 after.
+
+  - id: the-matrix-reloaded
+    title: The Matrix Reloaded
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2003-05-15
+    citations:
+      - url: https://www.boxofficemojo.com/franchise/fr3142029061
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "The Matrix Reloaded opened in US theaters May 15, 2003"
+      - url: https://en.wikipedia.org/wiki/The_Matrix_(franchise)
+        accessed: 2026-11-10
+        supports: [continuity]
+        snippet: "US release date May 15, 2003"
+    notes: >-
+      Dated by the wide US release; the Westwood premiere and the Cannes screening don't
+      count.
+
+  - id: the-matrix-revolutions
+    title: The Matrix Revolutions
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2003-11-05
+    citations:
+      - url: https://www.boxofficemojo.com/franchise/fr3142029061
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "The Matrix Revolutions opened in US theaters November 5, 2003"
+      - url: https://en.wikipedia.org/wiki/The_Matrix_(franchise)
+        accessed: 2026-11-10
+        supports: [continuity]
+        snippet: "US release date November 5, 2003"
+    notes: >-
+      Released simultaneously worldwide; the 2003-10-27 Los Angeles premiere doesn't count.
+
+  - id: the-matrix-resurrections
+    title: The Matrix Resurrections
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2021-12-22
+    citations:
+      - url: https://www.boxofficemojo.com/franchise/fr3142029061
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "The Matrix Resurrections opened in US theaters December 22, 2021"
+      - url: https://www.theverge.com/2021/12/20/22847124/the-matrix-resurrections-release-date-time-hbo-max-streaming-december-22nd
+        accessed: 2026-11-10
+        supports: [release]
+        snippet: "Reached HBO Max at 3 a.m. ET on December 22"
+      - url: https://en.wikipedia.org/wiki/The_Matrix_(franchise)
+        accessed: 2026-11-10
+        supports: [continuity, canon]
+        snippet: "Fourth film, directed by Lana Wachowski, released December 22, 2021"
+    notes: >-
+      Released the same day in US theaters and on HBO Max (Ad-Free plan); unlike Dune,
+      HBO Max did not open it early.
+
+rows:
+  - work: the-matrix
+    label: The Matrix
+  - work: the-animatrix
+    pieces: [1, 5]
+    label: The Animatrix (Shorts 1–5)
+  - work: the-matrix-reloaded
+    label: The Matrix Reloaded
+  - work: the-animatrix
+    pieces: [6, 9]
+    label: The Animatrix (Shorts 6–9)
+  - work: the-matrix-revolutions
+    label: The Matrix Revolutions
+  - work: the-matrix-resurrections
+    label: The Matrix Resurrections
+
+upcoming:
+  - {title: Untitled Matrix film (Drew Goddard), kind: feature_film, expected: "TBA"}
+
+exclusions:
+  - {title: The Matrix Revisited (2001), reason: Documentary; not narrative}
+  - {title: Enter the Matrix (2003), reason: Video game (its live-action footage is part of the game); not a screen release}
+  - {title: The Matrix Online and The Matrix Path of Neo (2005), reason: Video games; not screen releases}
+  - {title: The Matrix Awakens (2021), reason: "Interactive Unreal Engine 5 demo; a game experience, not a screen release"}
+  - {title: The Matrix Comics, reason: Comics; not screen releases}
+  - {title: The Animatrix TV broadcasts (Adult Swim 2004; Toonami 2021), reason: Re-airings of shorts already released}
+  - {title: The Matrix and Reloaded IMAX and anniversary re-releases, reason: Re-releases of existing films; not new works}
+  - {title: The Meatrix (2003), reason: Unaffiliated parody short; not made by the rights holder}
+  - {title: Matrix Resurrections interactive trailer site and Reface promotion, reason: Trailers and marketing tools; not narrative works}
+
+checks:
+  - {type: row_count, rule: split, work: the-animatrix, rows: 2, note: "Split around The Matrix Reloaded (2003-05-15); rests on the firm June 3 DVD date"}
+  - {type: absent, rule: scope_continuity, title: The Matrix Revisited (2001), note: Documentary is out of scope}
+  - {type: absent, rule: scope_continuity, title: Enter the Matrix (2003), note: "Game with live-action footage; not a screen release"}
+
+notes:
+  - "The Animatrix is one work (a set of nine shorts) split into two rows around The Matrix Reloaded; four shorts streamed on the official site and one ran in theaters before the June 3, 2003 home-video release of all nine."
+  - "Animatrix piece 2 (Program) is dated to the month only: ANN reported it available on 2003-03-06 but the upload day is unconfirmed. Piece 5 (Second Renaissance Part II) uses 2003-05-06 from TMDB/IMDb; AWN's schedule confirms only May. Flagged piece_dates_unconfirmed."
+  - "The Matrix (US/Australia) and The Animatrix (US/Japan) are co-productions; both treated as US, where Warner Bros. released them first."
+  - "No in-universe promotional content, crossovers or TV series were found; trailers, featurettes and marketing sites are out."
+  - "A new Matrix film by Drew Goddard was announced in April 2024 and is still in development with no release date as of the cutoff."
+  - "TMDB id given only for The Matrix (movie/603), confirmed on themoviedb.org; others left out."
