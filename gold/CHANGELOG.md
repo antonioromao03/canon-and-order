@@ -19,3 +19,4 @@ numbers.
 - 2026-11-10: `sherlock-2010` added and verified (test), seeded from a draft: citations and dates checked; unaired pilot kept as a semi-canon work.
 - 2026-11-10: `wednesday-2022` added and verified (test), seeded from a draft: citations and dates checked; Season 2 split into two parts as Netflix presented it.
 - 2026-11-10: `the-lord-of-the-rings-2001` added and verified (test), seeded from a draft: citations and dates checked; War of the Rohirrim treated as canon.
+- 2026-11-10: `alien-1979` added and verified (test), seeded from a draft: citations and dates checked; Prometheus viral videos and Covenant shorts split around their films.

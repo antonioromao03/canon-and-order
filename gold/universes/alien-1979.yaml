@@ -1,0 +1,463 @@
+schema_version: 1
+id: alien-1979
+input:
+  title: "Alien"
+  year: "1979"
+status: verified
+split: test
+cutoff: 2026-11-30
+continuity: >-
+  20th Century Studios' (Disney's) Alien franchise begun by Ridley Scott's Alien (1979):
+  the four original films, the Prometheus and Covenant prequels, Alien: Romulus, the FX
+  series Alien: Earth and official shorts and in-universe promos. The Alien vs. Predator
+  films and Predator: Badlands are included only as crossovers; the rest of the Predator
+  continuity, recuts, games, comics, novels and fan works are outside this file.
+seeded_from_draft: true
+annotator: António Romão
+annotated_on: 2026-11-10
+time_spent_minutes: 180
+
+works:
+  - id: alien
+    title: Alien
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 1979-05-25
+    external_ids: {tmdb: "movie/348"}
+    flags: [date_conflict]
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(film)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "Opened May 25, 1979 in 90 US theaters; wide June 22"
+      - url: https://themoviedb.org/movie/348-alien/releases
+        accessed: 2026-11-10
+        supports: [existence]
+    notes: >-
+      UK–US production (Brandywine with 20th Century-Fox, made by Fox's British
+      subsidiary); treated as US because Fox is a US studio and the US opening came first
+      (UK release 1979-09-06). Dated by the first public engagement, a limited opening in
+      90 theaters on 1979-05-25, the day after the Seattle festival premiere. The wide US
+      release was 1979-06-22; flagged date_conflict because which date counts depends on
+      whether a limited first run qualifies.
+
+  - id: aliens
+    title: Aliens
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 1986-07-18
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "Aliens released July 18, 1986"
+
+  - id: alien-3
+    title: Alien 3
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 1992-05-22
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "Alien 3 released May 22, 1992"
+
+  - id: alien-resurrection
+    title: Alien Resurrection
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 1997-11-26
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "Alien Resurrection released November 26, 1997"
+
+  - id: alien-vs-predator
+    title: Alien vs. Predator
+    kind: feature_film
+    canon: semi_canon
+    channel: theatrical
+    country: US
+    release: 2004-08-13
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_vs._Predator_(film)
+        accessed: 2026-11-10
+        supports: [existence, release, canon]
+        snippet: "US release 13 August 2004; meant as Alien prequel and Predator sequel"
+    notes: >-
+      Crossover with the Predator continuity. Semi-canon: the studio has never confirmed
+      it as canon, and later Alien films and Alien: Earth do not acknowledge it. Multinational
+      co-production (US, UK, Germany, Canada, Czech Republic); treated as US because Fox
+      produced and released it. The 2004-08-12 international openings are outside the
+      country of origin.
+
+  - id: aliens-vs-predator-requiem
+    title: "Aliens vs. Predator: Requiem"
+    kind: feature_film
+    canon: semi_canon
+    channel: theatrical
+    country: US
+    release: 2007-12-25
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release, canon]
+        snippet: "Crossover Aliens vs. Predator: Requiem released December 25, 2007"
+    notes: Crossover sequel to Alien vs. Predator; semi-canon for the same reason.
+
+  - id: prometheus-viral-videos
+    title: Prometheus viral videos
+    kind: promotional_content
+    channel: web
+    country: US
+    release: 2012-02-28
+    pieces:
+      - {number: 1, release: 2012-02-28}
+      - {number: 2, release: 2012-04-17}
+      - {number: 3, release: 2012-05-16}
+      - {number: 4, release: 2012-05-30}
+      - {number: 5, release: "2012-06"}
+      - {number: 6, release: 2012-06-27}
+      - {number: 7, release: 2012-10-11}
+    flags: [descriptive_name, piece_dates_unconfirmed]
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release, pieces]
+        snippet: "Lists six Prometheus viral shorts with dates, Feb 28 to Oct 11, 2012"
+      - url: https://www.movieviral.com/2012/02/28/prometheus-viral-video-peter-weylands-tedtalk-from-2023
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "Peter Weyland's TED talk from 2023 posted February 28, 2012"
+      - url: https://www.adn.com/economy/article/prometheus-ad-shows-us-robot-we-all-want-exclusive/2012/04/17
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "David 8 ad for Prometheus reported April 17, 2012"
+      - url: https://thehollywoodnews.com/2012/05/16/new-prometheus-quiet-eye-viral/
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "New Quiet Eye viral reported May 16, 2012"
+      - url: https://movieviral.com/2012/06/10/prometheus-end-credits-image-leads-to-new-viral-website-and-video
+        accessed: 2026-11-10
+        supports: [existence, pieces]
+        snippet: "End-credits image led to new site with young Weyland video"
+      - url: https://avp.fandom.com/wiki/Weyland_Industries_Testimonial
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "Testimonial released on YouTube June 27, 2012"
+    notes: >-
+      In-character Weyland Corp marketing pieces made by 20th Century Fox for Prometheus;
+      no official collective title covers all of them (the Blu-ray groups four as "The
+      Peter Weyland Files"), so the name is descriptive. Pieces: 1 TED 2023; 2 Happy
+      Birthday, David; 3 Quiet Eye: Elizabeth Shaw; 4 Project Prometheus: Mission; 5 young
+      Peter Weyland reciting Nietzsche on WhatIs101112.com (reported 2012-06-10, reached
+      through the film's end credits, so released after the film; exact day unconfirmed);
+      6 Weyland Industries Testimonial; 7 Prometheus Transmission. Dates for pieces 4 and 7
+      rest on a single list source, hence piece_dates_unconfirmed. Supplementary
+      (promotional_content), made for a film, so no parent. Split around Prometheus (a
+      single release) per the splitting rule: pieces 1–4 before 2012-06-08, 5–7 after.
+
+  - id: prometheus
+    title: Prometheus
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2012-06-08
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "Prometheus released June 8, 2012"
+    notes: >-
+      US–UK production (20th Century Fox with Scott Free); treated as US because Fox, the
+      rights holder, is a US studio. Its UK release (2012-06-01) came a week earlier.
+
+  - id: alien-covenant-short-films
+    title: "Alien: Covenant short films"
+    kind: short_film
+    channel: web
+    country: US
+    release: 2017-02-22
+    pieces:
+      - {number: 1, release: 2017-02-22}
+      - {number: 2, release: 2017-03-10}
+      - {number: 3, release: 2017-04-17}
+      - {number: 4, release: 2017-04-17}
+      - {number: 5, release: 2017-04-20}
+      - {number: 6, release: 2017-04-20}
+      - {number: 7, release: 2017-04-20}
+      - {number: 8, release: 2017-04-26}
+      - {number: 9, release: 2017-05-05}
+      - {number: 10, release: 2017-07-19}
+      - {number: 11, release: 2017-08-15}
+    flags: [descriptive_name, piece_dates_unconfirmed]
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release, pieces]
+        snippet: "Covenant shorts listed with dates, Feb 22 to Aug 15, 2017"
+      - url: https://avp.fandom.com/wiki/Meet_Walter
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "Meet Walter shown at SXSW, then posted to YouTube, March 10, 2017"
+      - url: https://avp.fandom.com/wiki/Crew_Messages
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "Two crew messages April 17, three more April 20, 2017"
+      - url: https://halloweendailynews.com/2017/04/crossing-prologue-alien-covenant-prometheus/
+        accessed: 2026-11-10
+        supports: [pieces]
+        snippet: "The Crossing released online on Alien Day, April 26, 2017"
+      - url: https://avp.fandom.com/wiki/She_Won%27t_Go_Quietly
+        accessed: 2026-11-10
+        supports: [pieces, canon]
+        snippet: "Released on YouTube May 5, 2017; contradicts the film"
+      - url: https://vimeo.com/218665972
+        accessed: 2026-11-10
+        supports: [existence]
+        snippet: "Phobos, directed by Toby Dye, conceived with Ridley Scott"
+    notes: >-
+      Official 20th Century Fox shorts for Alien: Covenant, mostly on YouTube; no official
+      collective title (TMDB groups them as a short film collection), so the name is
+      descriptive. Pieces: 1 Prologue: Last Supper; 2 Meet Walter; 3–7 Crew Messages
+      (Daniels, Oram; then Rosenthal, Lopé, Tennessee; order within each day follows the
+      batch listing); 8 Prologue: The Crossing; 9 She Won't Go Quietly (in-world but at odds
+      with the film's events); 10 Phobos; 11 Advent (released with the home-video campaign;
+      the Blu-ray came out 2017-08-15). Dates for 1, 10 and 11 rest on a single list
+      source, hence piece_dates_unconfirmed. Supplementary (short_film), made for a film,
+      so no parent. Split around Alien: Covenant (single release) per the splitting rule:
+      pieces 1–9 before 2017-05-19, 10–11 after.
+
+  - id: alien-covenant
+    title: "Alien: Covenant"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2017-05-19
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "Alien: Covenant released May 19, 2017"
+    notes: >-
+      Treated as US (20th Century Fox) for the same reason as Prometheus; the UK release
+      (2017-05-12) came a week earlier.
+
+  - id: alien-isolation-digital-series
+    title: "Alien: Isolation – The Digital Series"
+    kind: web_series
+    canon: semi_canon
+    channel: web
+    country: US
+    release: 2019-02-28
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien:_Isolation_%E2%80%93_The_Digital_Series
+        accessed: 2026-11-10
+        supports: [existence, release, canon]
+        snippet: "All seven episodes released February 28, 2019, exclusively on IGN"
+    notes: >-
+      Animated adaptation of the 2014 game, co-produced by 20th Century Fox and set fifteen
+      years after Alien. All seven episodes came out at once, so no pieces. Included as
+      semi-canon because it retells a game rather than being an original screen story,
+      and its canon status has never been stated; it is a substantially new screen work,
+      not a recut.
+
+  - id: alien-40th-anniversary-shorts
+    title: Alien 40th Anniversary Shorts
+    kind: short_film
+    canon: semi_canon
+    channel: web
+    country: US
+    release: 2019-03-29
+    pieces:
+      - {number: 1, release: 2019-03-29}
+      - {number: 2, release: 2019-04-05}
+      - {number: 3, release: 2019-04-12}
+      - {number: 4, release: 2019-04-19}
+      - {number: 5, release: 2019-04-26}
+      - {number: 6, release: 2019-04-26}
+    flags: [descriptive_name]
+    citations:
+      - url: https://www.cgmagonline.com/news/last-two-alien-short-films-premiering-on-alien-day-this-friday
+        accessed: 2026-11-10
+        supports: [existence, release, pieces]
+        snippet: "Six shorts released Fridays, March 29 to April 26 (Alien Day)"
+      - url: https://www.syfy.com/syfy-wire/new-alien-shorts-will-begin-to-burst-forth-in-honor-of-franchises-40th-birthday
+        accessed: 2026-11-10
+        supports: [existence, release, canon]
+        snippet: "Fox and Tongal shorts released weekly on IGN from March 29"
+    notes: >-
+      Six shorts by filmmakers picked from 550 pitches, produced by 20th Century Fox with
+      Tongal: 1 Containment, 2 Specimen, 3 Night Shift, 4 Ore, 5 Harvest, 6 Alone. Harvest
+      and Alone both came out on 2019-04-26; their order within the day is unconfirmed
+      (numbered as the announcement lists them). Earlier convention screenings (Emerald
+      City Comic Con, C2E2, WonderCon) don't count. The collective name is descriptive.
+      Semi-canon: official but fan-pitched, and never stated to be canon. Supplementary
+      (short_film), not made for a TV season, so no parent; nothing single-release came
+      out during its run.
+
+  - id: davids-lab-last-signs-of-life
+    title: "Alien: Covenant – Epilogue: David's Lab – Last Signs of Life"
+    kind: short_film
+    channel: web
+    country: US
+    release: 2019-08-15
+    citations:
+      - url: https://avp.fandom.com/wiki/David%27s_Lab:_Last_Signs_of_Life
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Uploaded to YouTube August 15, 2019, for the home release anniversary"
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "David's Lab: Last Signs of Life, August 15, 2019"
+    notes: >-
+      Released two years after the other Covenant shorts to mark the film's home-release
+      anniversary, so a separate work. Supplementary (short_film); no parent.
+
+  - id: alien-romulus
+    title: "Alien: Romulus"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2024-08-16
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien_(franchise)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "Alien: Romulus released August 16, 2024"
+
+  - id: alien-earth-s1
+    title: "Alien: Earth (Season 1)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2025-08-12
+    pieces:
+      - {number: 1, release: 2025-08-12}
+      - {number: 2, release: 2025-08-12}
+      - {number: 3, release: 2025-08-19}
+      - {number: 4, release: 2025-08-26}
+      - {number: 5, release: 2025-09-02}
+      - {number: 6, release: 2025-09-09}
+      - {number: 7, release: 2025-09-16}
+      - {number: 8, release: 2025-09-23}
+    citations:
+      - url: https://en.wikipedia.org/wiki/Alien:_Earth
+        accessed: 2026-11-10
+        supports: [existence, release, pieces, continuity]
+        snippet: "Eight episodes on FX and FX on Hulu, August 12 to September 23, 2025"
+    notes: >-
+      Aired on FX and streamed on Hulu the same night. Set two years before Alien and
+      treated by the studio as part of the main continuity. Its teasers and trailers are
+      marketing, not in-universe content; no shorts or companion web content made for the
+      season were found.
+
+  - id: predator-badlands
+    title: "Predator: Badlands"
+    kind: feature_film
+    canon: semi_canon
+    channel: theatrical
+    country: US
+    release: 2025-11-07
+    flags: [canon_unclear]
+    citations:
+      - url: https://en.wikipedia.org/wiki/Predator:_Badlands
+        accessed: 2026-11-10
+        supports: [existence, release, canon]
+        snippet: "US release November 7, 2025; features Weyland-Yutani synthetics"
+      - url: https://theplaylist.net/predator-badlands-director-dan-trachtenberg-confirms-crossover-with-alien-universe-wont-have-xenos-theres-no-xenomorph-in-this-movie-20250923/
+        accessed: 2026-11-10
+        supports: [canon]
+        snippet: "Director confirms Alien-universe crossover, but no Xenomorph"
+    notes: >-
+      Predator-franchise film whose leads are Weyland-Yutani synthetics; the director
+      described it as a crossover with the Alien universe. Included as a crossover work
+      (semi-canon) but flagged canon_unclear: it has no Alien creatures and its place in
+      the Alien timeline hasn't been stated. The Los Angeles and London premieres don't
+      count.
+
+rows:
+  - work: alien
+    label: Alien
+  - work: aliens
+    label: Aliens
+  - work: alien-3
+    label: Alien 3
+  - work: alien-resurrection
+    label: Alien Resurrection
+  - work: alien-vs-predator
+    label: Alien vs. Predator †
+  - work: aliens-vs-predator-requiem
+    label: "Aliens vs. Predator: Requiem †"
+  - work: prometheus-viral-videos
+    pieces: [1, 4]
+    label: Prometheus viral videos (Videos 1–4)
+  - work: prometheus
+    label: Prometheus
+  - work: prometheus-viral-videos
+    pieces: [5, 7]
+    label: Prometheus viral videos (Videos 5–7)
+  - work: alien-covenant-short-films
+    pieces: [1, 9]
+    label: "Alien: Covenant short films (Shorts 1–9)"
+  - work: alien-covenant
+    label: "Alien: Covenant"
+  - work: alien-covenant-short-films
+    pieces: [10, 11]
+    label: "Alien: Covenant short films (Shorts 10–11)"
+  - work: alien-isolation-digital-series
+    label: "Alien: Isolation – The Digital Series †"
+  - work: alien-40th-anniversary-shorts
+    label: Alien 40th Anniversary Shorts †
+  - work: davids-lab-last-signs-of-life
+    label: "Alien: Covenant – Epilogue: David's Lab – Last Signs of Life"
+  - work: alien-romulus
+    label: "Alien: Romulus"
+  - work: alien-earth-s1
+    label: "Alien: Earth (Season 1)"
+  - work: predator-badlands
+    label: "Predator: Badlands †"
+
+upcoming:
+  - {title: "Alien: Earth (Season 2)", kind: tv_season, expected: "TBA"}
+
+exclusions:
+  - {title: Predator (1987), reason: Start of the separate Predator continuity; only crossover works are in}
+  - {title: Predator 2 (1990), reason: "Predator continuity; its Alien skull is a cameo Easter egg, not a crossover"}
+  - {title: "Predators (2010), The Predator (2018) and Prey (2022)", reason: Predator continuity with no Alien crossover}
+  - {title: "Predator: Killer of Killers (2025)", reason: Predator animated anthology with no Alien crossover}
+  - {title: Alien (2003 Director's Cut), reason: Recut of the 1979 film}
+  - {title: Aliens (Special Edition), reason: Extended cut of the 1986 film}
+  - {title: Alien 3 (Assembly Cut), reason: "Alternate cut of the 1992 film; a recut, not a new work"}
+  - {title: Alien Resurrection (Special Edition), reason: Extended cut of the 1997 film}
+  - {title: "Alien: Romulus (revised home and streaming version)", reason: Same film with revised visual effects; a recut}
+  - {title: "Rick and Morty x Alien: Covenant short (2017)", reason: Adult Swim parody crossover set outside the story's continuity}
+  - {title: "Alien: Covenant x Audi lunar quattro (2017)", reason: Tie-in advertisement for a real product}
+  - {title: "Alien: Earth teasers and trailers (2024–2025)", reason: "Marketing trailers, not in-universe content"}
+  - {title: "Alien: Monday", reason: Unofficial fan-made anime short by OtaKing Animation}
+  - {title: "Memory: The Origins of Alien (2019)", reason: Documentary}
+  - {title: "Alien: A Conversation (2024)", reason: Featurette conversation between Ridley Scott and Fede Álvarez}
+  - {title: "Alien: Isolation (2014 video game) and other Alien games", reason: Games; not screen releases}
+  - {title: Alien comics and novels, reason: Not screen releases}
+
+checks:
+  - {type: row_count, rule: split, work: alien-covenant-short-films, rows: 2, note: "Split around Alien: Covenant; pieces 1–9 are weeks before it and 10–11 months after"}
+  - {type: present, rule: crossover, work: alien-vs-predator}
+  - {type: present, rule: semi_canon, work: alien-40th-anniversary-shorts}
+  - {type: absent, rule: scope_continuity, title: Predator (1987), note: Rest of the crossover's other continuity}
+  - {type: before, rule: scope_continuity, first: alien-romulus, then: alien-earth-s1, note: Both dates firm and a year apart}
+
+notes:
+  - "Alien is dated by its limited US opening (1979-05-25); the wide release was 1979-06-22. Flagged date_conflict."
+  - "Prometheus and Alien: Covenant are US–UK productions treated as US (20th Century Fox); both opened in the UK a week before the US."
+  - "The Alien vs. Predator films and Predator: Badlands are included as crossover works and marked semi-canon; the Predator films themselves are excluded."
+  - "Collective names for the Prometheus viral videos, the Covenant short films and the 40th Anniversary Shorts are descriptive."
+  - "A Romulus sequel and a new Covenant-world film written by Aaron Guzikowski have been reported in development with no title or date, so they aren't in upcoming."
+  - "The Alien: Romulus home release has only featurettes and deleted scenes; no narrative extras were found."
