@@ -1,0 +1,117 @@
+schema_version: 1
+id: dune-2021
+input:
+  title: "Dune"
+  year: "2021"
+status: verified
+split: test
+cutoff: 2026-11-30
+continuity: >-
+  Legendary's Dune continuity begun by Denis Villeneuve's Dune (2021): the Villeneuve
+  films and the HBO prequel series Dune: Prophecy, which Legendary's producers place in
+  the same universe. Earlier adaptations (Lynch's 1984 film, the Sci Fi Channel
+  miniseries), documentaries, games and books are outside this file.
+seeded_from_draft: true
+annotator: António Romão
+annotated_on: 2026-11-10
+time_spent_minutes: 45
+
+works:
+  - id: dune
+    title: Dune
+    kind: feature_film
+    channel: streaming
+    country: US
+    release: 2021-10-21
+    flags: [date_conflict]
+    citations:
+      - url: https://en.wikipedia.org/wiki/Dune_(2021_film)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "US release October 22, 2021 in theaters and on HBO Max"
+      - url: https://www.thewrap.com/when-is-dune-on-hbo-max/
+        accessed: 2026-11-10
+        supports: [release]
+        snippet: "Streams on HBO Max October 21 at 6 p.m. ET, a day early"
+    notes: >-
+      The official US release was 2021-10-22 (theaters and HBO Max), but HBO Max made it
+      available to all subscribers from 6 p.m. ET on 2021-10-21, the first date the US
+      public could watch it; flagged date_conflict because most sources give 22 October.
+      The 2021-09-03 Venice premiere and the 2021-09-15 international rollout don't count.
+      Treated as a US film (Legendary/Warner Bros.).
+
+  - id: dune-part-two
+    title: "Dune: Part Two"
+    kind: feature_film
+    channel: theatrical
+    country: US
+    release: 2024-03-01
+    citations:
+      - url: https://en.wikipedia.org/wiki/Dune:_Part_Two
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "Released in the US March 1, 2024, moved up from March 15"
+    notes: >-
+      The 2024-02-06 Mexico City world premiere and earlier fan screenings don't count;
+      dated by the wide US release.
+
+  - id: dune-prophecy-s1
+    title: "Dune: Prophecy (Season 1)"
+    kind: tv_season
+    channel: broadcast
+    country: US
+    release: 2024-11-17
+    pieces:
+      - {number: 1, release: 2024-11-17}
+      - {number: 2, release: 2024-11-24}
+      - {number: 3, release: 2024-12-01}
+      - {number: 4, release: 2024-12-08}
+      - {number: 5, release: 2024-12-15}
+      - {number: 6, release: 2024-12-22}
+    citations:
+      - url: https://en.wikipedia.org/wiki/Dune:_Prophecy
+        accessed: 2026-11-10
+        supports: [existence, release, pieces, continuity]
+        snippet: "Six weekly HBO episodes, November 17 to December 22, 2024"
+      - url: https://empireonline.com/tv/news/dune-prophecy-same-universe-denis-villeneuves-movies-exclusive
+        accessed: 2026-11-10
+        supports: [canon, continuity]
+        snippet: "Producer says the series is in the same universe as Villeneuve's films"
+    notes: >-
+      Prequel set about 10,000 years before the films; executive producer Jordan Goldberg
+      said it is in the same universe as Villeneuve's films, so it is treated as canon.
+      Aired on HBO and HBO Max (Max) together.
+
+rows:
+  - work: dune
+    label: Dune
+  - work: dune-part-two
+    label: "Dune: Part Two"
+  - work: dune-prophecy-s1
+    label: "Dune: Prophecy (Season 1)"
+
+upcoming:
+  - {title: "Dune: Part Three", kind: feature_film, expected: "2026-12-18"}
+  - {title: "Dune: Prophecy (Season 2)", kind: tv_season, expected: "2026"}
+
+exclusions:
+  - {title: Dune (1984), reason: David Lynch's film is an earlier adaptation in a separate continuity}
+  - {title: "Frank Herbert's Dune (2000)", reason: Sci Fi Channel miniseries; earlier adaptation in a separate continuity}
+  - {title: "Frank Herbert's Children of Dune (2003)", reason: Sequel miniseries to the 2000 adaptation; separate continuity}
+  - {title: "Jodorowsky's Dune (2013)", reason: Documentary about an unmade adaptation; not narrative}
+  - {title: "Dune: Part Two IMAX re-releases", reason: Re-releases of an existing film; not new works}
+  - {title: "Dune: Awakening and Dune: Spice Wars", reason: Games; not screen releases}
+  - {title: Dune novels and Dune graphic novels, reason: Books and comics; not screen releases}
+  - {title: "Dune: Prophecy official podcast and making-of featurettes", reason: Audio and behind-the-scenes material; not narrative screen works}
+
+checks:
+  - {type: present, rule: scope_continuity, work: dune-prophecy-s1, note: Prequel spinoff placed in the same universe by Legendary's producers}
+  - {type: before, rule: scope_continuity, first: dune-part-two, then: dune-prophecy-s1, note: "Ordered by release; March vs November 2024, unaffected by the flagged 2021 date"}
+  - {type: absent, rule: scope_continuity, title: Dune (1984), note: Earlier adaptation in a separate continuity}
+  - {type: absent, rule: scope_continuity, title: "Frank Herbert's Dune (2000)", note: Earlier adaptation in a separate continuity}
+
+notes:
+  - "Dune (2021) is dated 2021-10-21, when HBO Max opened it to subscribers at 6 p.m. ET; the official release date was 2021-10-22. Flagged date_conflict."
+  - "Dune: Prophecy is treated as canon on producer statements that it shares the films' universe; it is not semi_canon."
+  - "No official narrative shorts, specials, crossovers or in-universe promotional content were found; trailers, featurettes and marketing tie-ins are out."
+  - "Dune: Prophecy Season 2 was announced for 2026 with no exact date found; no source showed it premiering by the cutoff, so it is listed under upcoming."

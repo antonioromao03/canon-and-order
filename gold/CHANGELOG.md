@@ -14,3 +14,4 @@ numbers.
 - 2026-11-09: `schindlers-list-1993` added and verified (dev), seeded from a draft: citations and dates checked, stale draft note removed.
 - 2026-11-09: `12-angry-men-1957` added and verified (test), seeded from a draft: citations and dates checked; opening-day date_conflict flagged.
 - 2026-11-09: `the-godfather-1972` added and verified (test), seeded from a draft: citations and dates checked; first-run date_conflict flagged on the first two films.
+- 2026-11-10: `dune-2021` added and verified (test), seeded from a draft: citations and dates checked; HBO Max early-access date_conflict flagged on the first film.
