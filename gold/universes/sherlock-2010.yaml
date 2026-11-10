@@ -31,10 +31,10 @@ works:
         accessed: 2026-11-10
         supports: [existence, release, pieces]
         snippet: "A Study in Pink 25 Jul 10; The Great Game 08 Aug 10"
-      - url: https://wikiwand.com/en/articles/Sherlock_(TV_series)
+      - url: https://en.wikipedia.org/wiki/Sherlock_(TV_series)
         accessed: 2026-11-10
         supports: [existence, release, continuity]
-        snippet: "A Study in Pink aired 25 July 2010 on BBC One"
+        snippet: "First broadcast on BBC One and BBC HD on 25 July 2010"
 
   - id: sherlock-unaired-pilot
     title: "Sherlock: Unaired Pilot"
@@ -49,7 +49,7 @@ works:
         accessed: 2026-11-10
         supports: [existence, release]
         snippet: "Series one DVD out 30 August 2010, includes unaired 60-minute pilot"
-      - url: https://wikiwand.com/en/articles/Sherlock_(TV_series)
+      - url: https://en.wikipedia.org/wiki/Sherlock_(TV_series)
         accessed: 2026-11-10
         supports: [existence, canon]
         snippet: "BBC rejected the pilot and had it reshot as 90-minute episodes"
@@ -84,10 +84,10 @@ works:
     release: 2013-12-24
     parent: sherlock-s3
     citations:
-      - url: https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Many_Happy_Returns_(Sherlock).html
+      - url: https://en.wikipedia.org/wiki/Many_Happy_Returns_(Sherlock)
         accessed: 2026-11-10
         supports: [existence, release, parent]
-        snippet: "Prelude to series three, released 24 December 2013 on iPlayer, Red Button, YouTube"
+        snippet: "Precursor to the third series, released online 24 December 2013"
       - url: https://epguides.com/Sherlock
         accessed: 2026-11-10
         supports: [existence, release]
@@ -96,7 +96,6 @@ works:
       Seven-minute prequel mini-episode made for Series 3 (supplementary, short_film), so parent is
       sherlock-s3. It came out a week before the Series 3 premiere and is a single piece, not a set
       paired with episodes, so it is not a companion row: ordinary row in date order, before Series 3.
-      A pre-release report announced it for 25 December; the release itself was 24 December.
 
   - id: sherlock-s3
     title: Sherlock (Series 3)
@@ -125,7 +124,7 @@ works:
         accessed: 2026-11-10
         supports: [existence, release]
         snippet: "The Abominable Bride: 01 Jan 16 (93 min)"
-      - url: https://wikiwand.com/en/articles/Sherlock_(TV_series)
+      - url: https://en.wikipedia.org/wiki/Sherlock_(TV_series)
         accessed: 2026-11-10
         supports: [existence, release]
         snippet: "Special aired 1 January 2016 on BBC One, simulcast in UK cinemas"
@@ -178,7 +177,7 @@ exclusions:
 
 checks:
   - {type: present, rule: semi_canon, work: sherlock-unaired-pilot}
-  - {type: before, rule: companion, first: many-happy-returns, then: sherlock-s3, note: "Made for Series 3 but a single piece released before the premiere; ordinary row in date order"}
+  - {type: before, rule: sorting, first: many-happy-returns, then: sherlock-s3, note: "Made for Series 3 but a single piece released before the premiere; ordinary row in date order"}
   - {type: absent, rule: scope_continuity, title: Elementary}
   - {type: absent, rule: scope_continuity, title: Young Sherlock}
 

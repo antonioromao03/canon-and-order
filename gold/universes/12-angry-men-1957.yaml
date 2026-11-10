@@ -33,10 +33,6 @@ works:
         accessed: 2026-11-09
         supports: [existence, release, continuity]
         snippet: "Premiered April 10, 1957 at the Fox Wilshire Theater; distributed by United Artists"
-      - url: https://cordcuttersnews.com/?p=229781
-        accessed: 2026-11-09
-        supports: [release]
-        snippet: "United Artists released the film April 10, 1957"
     notes: >-
       Dated by the Los Angeles opening at the Fox Wilshire Theater (1957-04-10), which
       sources describe both as the premiere and as the release date; the New York
@@ -58,7 +54,7 @@ exclusions:
   - {title: Ek Ruka Hua Faisla (1986), reason: Hindi remake; foreign adaptation}
   - {title: 12 (2007), reason: Russian remake by Nikita Mikhalkov; foreign adaptation}
   - {title: 12 Citizens (2015), reason: Chinese remake; foreign adaptation}
-  - {title: Juror 8 (2019), reason: South Korean film inspired by the story; foreign adaptation}
+  - {title: Juror 8 (2019), reason: South Korean film loosely based on 12 Angry Men; foreign adaptation}
   - {title: "Beyond a Reasonable Doubt: Making 12 Angry Men", reason: Behind-the-scenes featurette on home release; not narrative}
   - {title: Twelve Angry Men (stage play), reason: Stage adaptation; not a screen work}
 

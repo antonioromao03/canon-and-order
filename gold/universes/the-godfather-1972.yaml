@@ -110,7 +110,7 @@ exclusions:
   - {title: The Godfather and The Godfather II (video games), reason: Games; not screen releases}
 
 checks:
-  - {type: before, rule: scope_continuity, first: the-godfather-part-ii, then: the-godfather-part-iii, note: "Sequels are in and ordered by release; dates 16 years apart, so not affected by the flagged date conflicts"}
+  - {type: before, rule: sorting, first: the-godfather-part-ii, then: the-godfather-part-iii, note: "Sequels are in and ordered by release; dates 16 years apart, so not affected by the flagged date conflicts"}
   - {type: present, rule: scope_continuity, work: the-godfather-part-iii, note: The third film belongs to the same continuity}
   - {type: absent, rule: scope_continuity, title: "Mario Puzo's The Godfather Saga (1977)", note: Recut of the first two films}
   - {type: absent, rule: scope_continuity, title: "The Godfather Coda: The Death of Michael Corleone (2020)", note: Recut of Part III}
@@ -118,5 +118,5 @@ checks:
 
 notes:
   - "Dates for the first two films use their first public New York engagements; the general releases were 1972-03-24 and 1974-12-20. Both are flagged date_conflict."
-  - "No official narrative shorts, specials or in-universe promotional content were found; the 1974 NBC broadcast of the first film was a lightly edited airing, not a new work."
-  - "Paramount acquired rights in May 2026 to a novel centred on Connie Corleone for a possible new film; it is an early-development report with no announced title or date, so it isn't listed in upcoming."
+  - "No official narrative shorts, specials or in-universe promotional content were found; the first film's 1974 NBC television premiere was a broadcast of the same film, not a new work."
+  - "In May 2026 Paramount was reported to hold the film rights to Connie, an authorized Godfather novel due in 2027 (https://theplaylist.net/the-godfather-connie-corleone-book-francis-ford-coppola-20260522/); no film has been announced, so it isn't listed in upcoming."

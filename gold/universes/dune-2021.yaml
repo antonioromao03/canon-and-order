@@ -78,8 +78,8 @@ works:
         supports: [canon, continuity]
         snippet: "Producer says the series is in the same universe as Villeneuve's films"
     notes: >-
-      Prequel set about 10,000 years before the films; executive producer Jordan Goldberg
-      said it is in the same universe as Villeneuve's films, so it is treated as canon.
+      Prequel set about 10,000 years before the films; a producer said in Empire that it is in
+      the same universe as Villeneuve's films, so it is treated as canon.
       Aired on HBO and HBO Max (Max) together.
 
 rows:
@@ -92,7 +92,7 @@ rows:
 
 upcoming:
   - {title: "Dune: Part Three", kind: feature_film, expected: "2026-12-18"}
-  - {title: "Dune: Prophecy (Season 2)", kind: tv_season, expected: "2026"}
+  - {title: "Dune: Prophecy (Season 2)", kind: tv_season, expected: "TBA"}
 
 exclusions:
   - {title: Dune (1984), reason: David Lynch's film is an earlier adaptation in a separate continuity}
@@ -106,7 +106,7 @@ exclusions:
 
 checks:
   - {type: present, rule: scope_continuity, work: dune-prophecy-s1, note: Prequel spinoff placed in the same universe by Legendary's producers}
-  - {type: before, rule: scope_continuity, first: dune-part-two, then: dune-prophecy-s1, note: "Ordered by release; March vs November 2024, unaffected by the flagged 2021 date"}
+  - {type: before, rule: sorting, first: dune-part-two, then: dune-prophecy-s1, note: "Ordered by release; March vs November 2024, unaffected by the flagged 2021 date"}
   - {type: absent, rule: scope_continuity, title: Dune (1984), note: Earlier adaptation in a separate continuity}
   - {type: absent, rule: scope_continuity, title: "Frank Herbert's Dune (2000)", note: Earlier adaptation in a separate continuity}
 
@@ -114,4 +114,4 @@ notes:
   - "Dune (2021) is dated 2021-10-21, when HBO Max opened it to subscribers at 6 p.m. ET; the official release date was 2021-10-22. Flagged date_conflict."
   - "Dune: Prophecy is treated as canon on producer statements that it shares the films' universe; it is not semi_canon."
   - "No official narrative shorts, specials, crossovers or in-universe promotional content were found; trailers, featurettes and marketing tie-ins are out."
-  - "Dune: Prophecy Season 2 was announced for 2026 with no exact date found; no source showed it premiering by the cutoff, so it is listed under upcoming."
+  - "Dune: Prophecy Season 2 is officially renewed but has no announced premiere date; reports point to late 2026 at the earliest (https://www.hollywoodreporter.com/tv/tv-news/dune-prophecy-season-2-date-cast-1236423903/), so it is upcoming with expected TBA."

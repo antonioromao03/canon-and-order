@@ -161,7 +161,10 @@ works:
       6 Weyland Industries Testimonial; 7 Prometheus Transmission. Dates for pieces 4 and 7
       rest on a single list source, hence piece_dates_unconfirmed. Supplementary
       (promotional_content), made for a film, so no parent. Split around Prometheus (a
-      single release) per the splitting rule: pieces 1–4 before 2012-06-08, 5–7 after.
+      single release) per the splitting rule: pieces 1–5 in the first row, 6–7 after.
+      Piece 5 probably went up with the film, but no source gives its day, and its
+      month-only date sorts as 2012-06-01, before the film; it stays in the first row
+      so the gold rows match the date rule.
 
   - id: prometheus
     title: Prometheus
@@ -397,13 +400,13 @@ rows:
   - work: aliens-vs-predator-requiem
     label: "Aliens vs. Predator: Requiem †"
   - work: prometheus-viral-videos
-    pieces: [1, 4]
-    label: Prometheus viral videos (Videos 1–4)
+    pieces: [1, 5]
+    label: Prometheus viral videos (Videos 1–5)
   - work: prometheus
     label: Prometheus
   - work: prometheus-viral-videos
-    pieces: [5, 7]
-    label: Prometheus viral videos (Videos 5–7)
+    pieces: [6, 7]
+    label: Prometheus viral videos (Videos 6–7)
   - work: alien-covenant-short-films
     pieces: [1, 9]
     label: "Alien: Covenant short films (Shorts 1–9)"
@@ -452,7 +455,7 @@ checks:
   - {type: present, rule: crossover, work: alien-vs-predator}
   - {type: present, rule: semi_canon, work: alien-40th-anniversary-shorts}
   - {type: absent, rule: scope_continuity, title: Predator (1987), note: Rest of the crossover's other continuity}
-  - {type: before, rule: scope_continuity, first: alien-romulus, then: alien-earth-s1, note: Both dates firm and a year apart}
+  - {type: before, rule: sorting, first: alien-romulus, then: alien-earth-s1, note: Both dates firm and a year apart}
 
 notes:
   - "Alien is dated by its limited US opening (1979-05-25); the wide release was 1979-06-22. Flagged date_conflict."

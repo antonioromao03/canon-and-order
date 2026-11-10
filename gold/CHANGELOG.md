@@ -20,3 +20,14 @@ numbers.
 - 2026-11-10: `wednesday-2022` added and verified (test), seeded from a draft: citations and dates checked; Season 2 split into two parts as Netflix presented it.
 - 2026-11-10: `the-lord-of-the-rings-2001` added and verified (test), seeded from a draft: citations and dates checked; War of the Rohirrim treated as canon.
 - 2026-11-10: `alien-1979` added and verified (test), seeded from a draft: citations and dates checked; Prometheus viral videos and Covenant shorts split around their films.
+- 2026-11-10: annotation guide: limited public runs and early streaming openings count as the release date; `before` checks of plain date order use `rule: sorting`; `upcoming` lists only officially announced titles. All twelve files already follow these.
+- 2026-11-10: `the-dark-knight-2008`: source added for Gotham Tonight's Comcast On Demand debut.
+- 2026-11-10: `spider-man-2002`: Across the Spider-Verse exclusion reason corrected (archival footage of Maguire's Spider-Man, film not specified); Brand New Day checked: Maguire is not in its cast list.
+- 2026-11-10: `schindlers-list-1993`: Shoah Foundation featurette renamed to its disc title; 1994 reissue confirmed by AFI.
+- 2026-11-10: `12-angry-men-1957`: weak cordcuttersnews citation removed; Juror 8 reason corrected (loosely based on 12 Angry Men).
+- 2026-11-10: `the-godfather-1972`: order check moved to `rule: sorting`; Connie novel note sourced and corrected (rights held, no film announced); unsourced "lightly edited" claim removed.
+- 2026-11-10: `dune-2021`: order check moved to `rule: sorting`; unconfirmed producer name removed; Prophecy Season 2 `expected` changed from "2026" to "TBA" (no date announced).
+- 2026-11-10: `sherlock-2010`: order check moved to `rule: sorting`; Wikipedia mirror links replaced with Wikipedia; unsourced 25 December claim removed.
+- 2026-11-10: `wednesday-2022`: order checks moved to `rule: sorting`; TikTok exclusion reason corrected (social post); Season 3 wrap sourced.
+- 2026-11-10: `the-lord-of-the-rings-2001`: present check added for The War of the Rohirrim; mirror link replaced with Wikipedia; Shadow of the Past announcement sourced.
+- 2026-11-10: `alien-1979`: order check moved to `rule: sorting`; Prometheus viral video 5 moved into the first row (videos 1–5), since its month-only date sorts before the film.

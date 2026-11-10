@@ -134,7 +134,7 @@ works:
     release: 2024-12-13
     external_ids: {tmdb: "movie/839033"}
     citations:
-      - url: https://www.wikiwand.com/en/articles/The_Lord_of_the_Rings:_The_War_of_the_Rohirrim
+      - url: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_War_of_the_Rohirrim
         accessed: 2026-11-10
         supports: [existence, release, canon, continuity]
         snippet: "Released in the US December 13, 2024; connected to the trilogy's continuity"
@@ -187,9 +187,10 @@ checks:
   - {type: absent, rule: scope_continuity, title: "The Lord of the Rings: The Rings of Power", note: Separate Amazon continuity despite the shared title}
   - {type: absent, rule: scope_continuity, title: "The Lord of the Rings (1978 animated film)"}
   - {type: absent, rule: scope_continuity, title: "The Hobbit (1977 TV special)"}
+  - {type: present, rule: scope_continuity, work: war-of-the-rohirrim, note: Anime prequel Warner Bros. connects to the film trilogy}
 
 notes:
   - "Input year 2001 picks Peter Jackson's New Line film continuity (The Fellowship of the Ring, 2001), not Ralph Bakshi's 1978 film or Amazon's series."
   - All films are New Zealand–US co-productions or US–Japan productions released by New Line / Warner Bros.; US general release dates are used throughout, and premieres are ignored.
   - "No official narrative shorts, web series or in-universe promotional pieces from the rights holder were found; production diaries, appendices and extended editions are excluded."
-  - "The Lord of the Rings: Shadow of the Past was announced in March 2026 (Stephen Colbert co-writing, set after The Return of the King) with no release date."
+  - "The Lord of the Rings: Shadow of the Past (working title) was announced by Warner Bros. in March 2026, with Stephen Colbert co-writing and a story set after The Return of the King (https://www.npr.org/2026/03/25/nx-s1-5760799/stephen-colbert-lord-of-the-rings); no release date."

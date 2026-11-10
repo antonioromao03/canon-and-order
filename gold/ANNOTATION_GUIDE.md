@@ -16,7 +16,9 @@ fix this guide.
 3. Date every work and every piece (see Dates). Record a citation for each claim.
 4. Write the rows by hand, applying the row rules below. Do not run the rule engine to
    produce them: the gold rows are what the engine is tested against.
-5. Add 2–5 `checks` for the rules this universe exercises.
+5. Add 2–5 `checks` for the rules this universe exercises. A `before` check that tests
+   plain date order uses `rule: sorting`; use `companion` only when one side is a
+   companion row.
 6. Run `uv run python -m canon_and_order.gold validate` until it passes.
 7. Log `time_spent_minutes`, set `annotated_on`, then `status: verified`. Add a line to
    `gold/CHANGELOG.md`.
@@ -75,6 +77,9 @@ universe from scratch first, so the draft error rate can be measured.
 - The first date the general public in the **country of origin** could watch it, local
   time: wide theatrical, streaming, broadcast or home-video release. Festival, red-carpet
   and fan-screening premieres do not count.
+- A limited public run (a film opening in a few cities) or an early streaming opening
+  counts: the public could watch it. If sources commonly give the later wide date, add
+  `date_conflict` and name that date in `notes`.
 - Seasons: premiere of the first episode. Piece sets: the first piece. Home-release
   extras: the disc or digital release date.
 - Write `YYYY-MM-DD`; if only the month or year is confirmed, write `"YYYY-MM"` or
@@ -103,6 +108,14 @@ universe from scratch first, so the draft error rate can be measured.
 - **Sorting:** oldest first. Same day: actual release order if known; otherwise
   supplementary before main; otherwise the one whose run began earlier. Flag
   `same_day_order_unconfirmed` when you had to fall back.
+
+### Upcoming
+
+- List a title in `upcoming` only when the rights holder has officially announced it
+  (greenlit, renewed or dated), even if it is untitled or undated: `expected` is as
+  precise as the announcement, down to `"TBA"`.
+- Development reports, rumours and rights purchases stay out; mention them in `notes`
+  with a source.
 
 ## Evidence
 

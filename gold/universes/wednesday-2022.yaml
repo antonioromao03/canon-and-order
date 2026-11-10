@@ -129,13 +129,13 @@ exclusions:
   - {title: The New Addams Family, reason: Separate 1998 TV continuity}
   - {title: The Addams Family (2019 animated film), reason: Separate animated continuity}
   - {title: Uncle Fester spin-off, reason: Reported as in development only; not an officially announced title}
-  - {title: Thing's "Get Ready With Me" TikTok, reason: Behind-the-scenes premise set outside the story's continuity}
+  - {title: Thing's "Get Ready With Me" TikTok, reason: In-character post on Netflix's Wednesday TikTok account; social posts are not screen releases}
   - {title: "The Dead Dance (Lady Gaga music video)", reason: "Music video, not narrative in-universe content"}
   - {title: "Wednesday trailers, teasers and casting announcements", reason: Trailers and teasers are out of scope}
 
 checks:
-  - {type: before, rule: companion, first: nevermore-recruitment-2022, then: wednesday-s1, note: "Made for Season 1 but a single piece released before the premiere; ordinary row in date order"}
-  - {type: before, rule: companion, first: nevermore-recruitment-2025, then: wednesday-s2a, note: "Made for Season 2 but released weeks before Part 1; ordinary row in date order"}
+  - {type: before, rule: sorting, first: nevermore-recruitment-2022, then: wednesday-s1, note: "Made for Season 1 but a single piece released before the premiere; ordinary row in date order"}
+  - {type: before, rule: sorting, first: nevermore-recruitment-2025, then: wednesday-s2a, note: "Made for Season 2 but released weeks before Part 1; ordinary row in date order"}
   - {type: absent, rule: scope_continuity, title: The Addams Family (1991 film)}
   - {type: absent, rule: scope_continuity, title: The Addams Family (2019 animated film)}
 
@@ -143,4 +143,4 @@ notes:
   - Country of origin treated as US - an MGM Television production for Netflix (filmed in Romania and Ireland), released worldwide on Netflix at once.
   - Season 2 is split into two works because Netflix presented it as Part 1 and Part 2, released four weeks apart.
   - The two recruitment videos have no official titles; descriptive names are used.
-  - Season 3 is renewed and has wrapped filming, but Netflix has announced no date; a 2027 release is only reported, so expected is TBA.
+  - "Season 3 is renewed and Netflix confirmed filming wrapped on 2026-09-30 (https://www.whats-on-netflix.com/news/wednesday-season-3-winona-ryder-filming-wrap/), but no date is announced; a 2027 release is only reported, so expected is TBA."
