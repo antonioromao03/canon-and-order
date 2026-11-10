@@ -1,0 +1,188 @@
+schema_version: 1
+id: sherlock-2010
+input:
+  title: "Sherlock"
+  year: "2010"
+status: verified
+split: test
+cutoff: 2026-11-30
+continuity: >-
+  The BBC/Hartswood Films series Sherlock (2010–2017) created by Steven Moffat and Mark Gatiss,
+  a contemporary-London Holmes and Watson: its four series, the Victorian-set special and the
+  online mini-episode. Other Sherlock Holmes adaptations are separate continuities.
+seeded_from_draft: true
+annotator: António Romão
+annotated_on: 2026-11-10
+time_spent_minutes: 75
+
+works:
+  - id: sherlock-s1
+    title: Sherlock (Series 1)
+    kind: tv_season
+    channel: broadcast
+    country: GB
+    release: 2010-07-25
+    pieces:
+      - {number: 1, release: 2010-07-25}
+      - {number: 2, release: 2010-08-01}
+      - {number: 3, release: 2010-08-08}
+    citations:
+      - url: https://epguides.com/Sherlock
+        accessed: 2026-11-10
+        supports: [existence, release, pieces]
+        snippet: "A Study in Pink 25 Jul 10; The Great Game 08 Aug 10"
+      - url: https://wikiwand.com/en/articles/Sherlock_(TV_series)
+        accessed: 2026-11-10
+        supports: [existence, release, continuity]
+        snippet: "A Study in Pink aired 25 July 2010 on BBC One"
+
+  - id: sherlock-unaired-pilot
+    title: "Sherlock: Unaired Pilot"
+    kind: tv_special
+    canon: semi_canon
+    channel: home_video
+    country: GB
+    release: 2010-08-30
+    flags: [canon_unclear]
+    citations:
+      - url: https://eurocrime.blogspot.com/2010/08/tv-news-sherlock-s2-dvd.html?m=1
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Series one DVD out 30 August 2010, includes unaired 60-minute pilot"
+      - url: https://wikiwand.com/en/articles/Sherlock_(TV_series)
+        accessed: 2026-11-10
+        supports: [existence, canon]
+        snippet: "BBC rejected the pilot and had it reshot as 90-minute episodes"
+    notes: >-
+      The original 55-60 minute pilot (dir. Coky Giedroyc), never broadcast and first released as an
+      extra on the Series 1 DVD. It is a separately filmed production of the first story, not a recut,
+      so it is kept as a work; it was superseded by the broadcast first episode, hence semi_canon and
+      canon_unclear. Main content (a narrative episode, not short/web/promo); released after the Series 1
+      run, so an ordinary row in date order.
+
+  - id: sherlock-s2
+    title: Sherlock (Series 2)
+    kind: tv_season
+    channel: broadcast
+    country: GB
+    release: 2012-01-01
+    pieces:
+      - {number: 1, release: 2012-01-01}
+      - {number: 2, release: 2012-01-08}
+      - {number: 3, release: 2012-01-15}
+    citations:
+      - url: https://epguides.com/Sherlock
+        accessed: 2026-11-10
+        supports: [existence, release, pieces]
+        snippet: "Series 2 aired 01 Jan 12, 08 Jan 12, 15 Jan 12"
+
+  - id: many-happy-returns
+    title: "Sherlock: Many Happy Returns"
+    kind: short_film
+    channel: web
+    country: GB
+    release: 2013-12-24
+    parent: sherlock-s3
+    citations:
+      - url: https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Many_Happy_Returns_(Sherlock).html
+        accessed: 2026-11-10
+        supports: [existence, release, parent]
+        snippet: "Prelude to series three, released 24 December 2013 on iPlayer, Red Button, YouTube"
+      - url: https://epguides.com/Sherlock
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Many Happy Returns: 24 Dec 13 (7 min)"
+    notes: >-
+      Seven-minute prequel mini-episode made for Series 3 (supplementary, short_film), so parent is
+      sherlock-s3. It came out a week before the Series 3 premiere and is a single piece, not a set
+      paired with episodes, so it is not a companion row: ordinary row in date order, before Series 3.
+      A pre-release report announced it for 25 December; the release itself was 24 December.
+
+  - id: sherlock-s3
+    title: Sherlock (Series 3)
+    kind: tv_season
+    channel: broadcast
+    country: GB
+    release: 2014-01-01
+    pieces:
+      - {number: 1, release: 2014-01-01}
+      - {number: 2, release: 2014-01-05}
+      - {number: 3, release: 2014-01-12}
+    citations:
+      - url: https://epguides.com/Sherlock
+        accessed: 2026-11-10
+        supports: [existence, release, pieces]
+        snippet: "Series 3 aired 01 Jan 14, 05 Jan 14, 12 Jan 14"
+
+  - id: the-abominable-bride
+    title: "Sherlock: The Abominable Bride"
+    kind: tv_special
+    channel: broadcast
+    country: GB
+    release: 2016-01-01
+    citations:
+      - url: https://epguides.com/Sherlock
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "The Abominable Bride: 01 Jan 16 (93 min)"
+      - url: https://wikiwand.com/en/articles/Sherlock_(TV_series)
+        accessed: 2026-11-10
+        supports: [existence, release]
+        snippet: "Special aired 1 January 2016 on BBC One, simulcast in UK cinemas"
+    notes: Broadcast on BBC One and simulcast in UK cinemas the same day; counted as a broadcast special.
+
+  - id: sherlock-s4
+    title: Sherlock (Series 4)
+    kind: tv_season
+    channel: broadcast
+    country: GB
+    release: 2017-01-01
+    pieces:
+      - {number: 1, release: 2017-01-01}
+      - {number: 2, release: 2017-01-08}
+      - {number: 3, release: 2017-01-15}
+    citations:
+      - url: https://epguides.com/Sherlock
+        accessed: 2026-11-10
+        supports: [existence, release, pieces]
+        snippet: "Series 4 aired 01 Jan 17, 08 Jan 17, 15 Jan 17"
+
+rows:
+  - work: sherlock-s1
+    label: Sherlock (Series 1)
+  - work: sherlock-unaired-pilot
+    label: "Sherlock: Unaired Pilot †"
+  - work: sherlock-s2
+    label: Sherlock (Series 2)
+  - work: many-happy-returns
+    label: "Sherlock: Many Happy Returns"
+  - work: sherlock-s3
+    label: Sherlock (Series 3)
+  - work: the-abominable-bride
+    label: "Sherlock: The Abominable Bride"
+  - work: sherlock-s4
+    label: Sherlock (Series 4)
+
+upcoming: []
+
+exclusions:
+  - {title: Elementary, reason: Separate CBS modern-day Holmes adaptation; different continuity}
+  - {title: Sherlock Holmes (2009 film), reason: Separate Warner Bros. film continuity}
+  - {title: Young Sherlock, reason: Separate Prime Video series; different continuity}
+  - {title: Unlocking Sherlock, reason: Documentary}
+  - {title: Sherlock Uncovered, reason: Documentary disc extra}
+  - {title: "Sherlock: The Network", reason: Mobile app; not a screen release}
+  - {title: The Science of Deduction and John Watson's blog, reason: Tie-in websites; not screen media}
+  - {title: "Sherlock: The Game Is Now", reason: Live immersive experience; not a screen release}
+  - {title: "Sherlock on the Buses (Harry & Paul sketch)", reason: Third-party parody sketch with a different cast}
+
+checks:
+  - {type: present, rule: semi_canon, work: sherlock-unaired-pilot}
+  - {type: before, rule: companion, first: many-happy-returns, then: sherlock-s3, note: "Made for Series 3 but a single piece released before the premiere; ordinary row in date order"}
+  - {type: absent, rule: scope_continuity, title: Elementary}
+  - {type: absent, rule: scope_continuity, title: Young Sherlock}
+
+notes:
+  - Country of origin treated as GB - Hartswood Films for BBC Wales, premiering on BBC One; PBS Masterpiece co-produced and aired later in the US.
+  - The unaired pilot is included as semi_canon rather than excluded because it is a separately filmed narrative production released by the rights holder, not a recut; it was superseded by the broadcast first episode.
+  - No fifth series has been officially announced by the cutoff; creators have only said it remains possible.
