@@ -28,6 +28,7 @@ Twelve verified universes (4 dev, 8 test) and the resolution probe set, cut-off
 - 2026-11-10: `the-dark-knight-2008`: source added for Gotham Tonight's Comcast On Demand debut.
 - 2026-11-10: `spider-man-2002`: Across the Spider-Verse exclusion reason corrected (archival footage of Maguire's Spider-Man, film not specified); Brand New Day checked: Maguire is not in its cast list.
 - 2026-11-10: `schindlers-list-1993`: Shoah Foundation featurette renamed to its disc title; 1994 reissue confirmed by AFI.
+- 2026-11-11: annotation guide: a companion row is any parented work whose release span overlaps its season's run, including single shorts and all-at-once releases (matches the existing `breaking-bad-2008` rows); supplementary content never splits a miniseries either. `breaking-bad-2008`: note on companion rows reworded to match; no rows changed.
 - 2026-11-10: `12-angry-men-1957`: weak cordcuttersnews citation removed; Juror 8 reason corrected (loosely based on 12 Angry Men).
 - 2026-11-10: `the-godfather-1972`: order check moved to `rule: sorting`; Connie novel note sourced and corrected (rights held, no film announced); unsourced "lightly edited" claim removed.
 - 2026-11-10: `dune-2021`: order check moved to `rule: sorting`; unconfirmed producer name removed; Prophecy Season 2 `expected` changed from "2026" to "TBA" (no date announced).
