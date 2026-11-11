@@ -10,12 +10,14 @@ def make_work(
     kind: Kind,
     release: str | None,
     pieces: list[str | None] | None = None,
+    parent: str | None = None,
 ) -> Work:
     """A minimal work; ``pieces`` lists piece release dates in release order (None: undated)."""
     return Work(
         id=work_id,
         title=work_id,
         kind=kind,
+        parent=parent,
         release=None if release is None else PartialDate.parse(release),
         pieces=[
             Piece(number=number, release=None if date is None else PartialDate.parse(date))

@@ -105,9 +105,10 @@ counts. To measure it later, note in each commit how many draft errors you corre
   no pieces) overlaps the season's run (premiere to finale, both days included). A single
   short or an all-at-once release counts, not only sets. The row is dated by its first
   piece: if that came out on or before the premiere, the row goes directly before the
-  season row; otherwise directly after it. If the season is split, split its companion
-  rows at the same point. A parented work released wholly outside the run is an ordinary
-  row in date order.
+  season row; otherwise directly after it, even if other rows fall between their dates.
+  If the season is split, split its companion rows at the same points (and only there),
+  and place each companion part against the season part it falls in, by the same test.
+  A parented work released wholly outside the run is an ordinary row in date order.
 - Two multi-episode works releasing over the same period do not split each other; keep
   each whole and sort by premiere.
 - **Sorting:** oldest first. Same day: actual release order if known; otherwise
