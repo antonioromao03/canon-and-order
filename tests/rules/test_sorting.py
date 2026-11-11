@@ -8,42 +8,10 @@ is tested with splitting.
 from itertools import permutations
 
 import pytest
+from builders import keys, make_work, order
 
-from canon_and_order.domain import Kind, PartialDate, Piece, Row, RowRole, Work
+from canon_and_order.domain import Kind, RowRole, Work
 from canon_and_order.rules import build_rows
-
-RowKey = tuple[str, tuple[int, int] | None, RowRole]
-
-
-def make_work(
-    work_id: str,
-    kind: Kind,
-    release: str | None,
-    pieces: list[str] | None = None,
-) -> Work:
-    """A minimal work; ``pieces`` lists piece release dates in release order."""
-    return Work(
-        id=work_id,
-        title=work_id,
-        kind=kind,
-        release=None if release is None else PartialDate.parse(release),
-        pieces=[
-            Piece(number=number, release=PartialDate.parse(date))
-            for number, date in enumerate(pieces or [], start=1)
-        ],
-    )
-
-
-def keys(rows: list[Row]) -> list[RowKey]:
-    """What the evaluation compares: work, piece range and role (labels are not scored)."""
-    return [
-        (row.work, None if row.pieces is None else (row.pieces.first, row.pieces.last), row.role)
-        for row in rows
-    ]
-
-
-def order(rows: list[Row]) -> list[str]:
-    return [row.work for row in rows]
 
 
 def test_no_works_give_no_rows() -> None:

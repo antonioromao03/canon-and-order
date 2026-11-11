@@ -111,8 +111,10 @@ counts. To measure it later, note in each commit how many draft errors you corre
 - Two multi-episode works releasing over the same period do not split each other; keep
   each whole and sort by premiere.
 - **Sorting:** oldest first. Same day: actual release order if known; otherwise
-  supplementary before main; otherwise the one whose run began earlier. Flag
-  `same_day_order_unconfirmed` when you had to fall back.
+  supplementary before main; otherwise the one whose run began earlier; otherwise a
+  single release (a film, or a work whose pieces all came out that day) before a
+  multi-piece work premiering that day. Flag `same_day_order_unconfirmed` when you had to
+  fall back.
 
 ### Upcoming
 
