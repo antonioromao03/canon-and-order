@@ -69,6 +69,7 @@ uv run python -m canon_and_order.gold validate   # validate the gold set
 src/canon_and_order/
   domain/     PartialDate, Work, Piece, Row and friends
   gold/       gold-file schema, loader and validation CLI
+  rules/      rule engine: works in, ordered timeline rows out (in progress)
 gold/         annotation guide, template, gold universes, changelog
 docs/         PRD, evaluation protocol, architecture decision records
 tests/
