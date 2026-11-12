@@ -7,7 +7,10 @@ order), with extras reported separately from films and seasons.
 ## Gold Set
 
 - v1: 12 universes, frozen at the cut-off date 2026-11-30. Predictions are filtered to
-  the same date before scoring.
+  the same date before scoring: a predicted work is dropped, with its rows, when every day
+  its release date could be falls after the cut-off ("2026" stays, "2027" goes). Undated
+  works stay, and pieces are not filtered: a season that premiered before the cut-off
+  stays whole.
 - **Dev** (4): Breaking Bad (2008), The Dark Knight (2008), Spider-Man (2002),
   Schindler's List (1993). Breaking Bad and The Dark Knight appear as examples in the
   product spec, so they can never be test universes.
