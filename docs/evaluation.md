@@ -70,6 +70,17 @@ override a clearer `token_set_ratio` difference. Results are also reported at th
 | Resolution accuracy | Inputs | Expected outcome on the probe set (universe, duplicate, other, not found), by category |
 | Cost, latency, tokens | Runs | Mean, p50, p95 per universe; shadow cost at list prices |
 
+Every metric is stored as integer counts per universe, and rates are computed from them.
+
+**Works.** A match is a true positive, an unmatched gold work a miss, an unmatched
+prediction a false positive. The slices are all works, **core** (film and series kind
+groups) vs **extras** (the extra group), and canon vs semi-canon. True positives and misses
+are sliced by the gold work's labels; a false positive has no gold work, so it is sliced by
+the predicted work's labels. F1 is computed as `2tp / (2tp + fp + fn)`, which equals the
+harmonic mean of precision and recall whenever both are defined. A rate whose denominator
+is 0 is undefined (`None`), so a slice gold lacks, where every prediction is wrong, has
+undefined recall but F1 0.
+
 Unmatched predictions are adjudicated as *invented*, *real but out of scope*, or *gold
 missed it*. The last case fixes the gold set (new version) rather than counting as an error.
 
