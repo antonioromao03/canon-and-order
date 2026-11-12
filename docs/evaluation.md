@@ -28,10 +28,29 @@ apostrophes (so "Schindler's" gives "schindlers"), other punctuation (replaced b
 a leading "the", "a" or "an", and a trailing bracketed year such as "(2002)". It turns
 Roman numerals 1–39 (those written with I, V and X) into digits; larger ones are left
 alone, because they would turn words such as "mix" into numbers. Other bracketed text is
-kept, since it can be the only difference between two works. Candidate pairs need a compatible kind group (film, series, extra) and are
-scored with rapidfuzz `token_set_ratio`; pairs are assigned one-to-one with the Hungarian
-algorithm at threshold 85, with results also reported at 80 and 90. Fifty matches are
-audited by hand to measure the matcher itself.
+kept, since it can be the only difference between two works.
+
+A gold work and a predicted work are a candidate pair when all three hold:
+
+1. Their kinds are in one group: **film** (feature film, TV movie), **series** (TV season,
+   miniseries) or **extra** (TV special, TV episode, short, web series, promotional
+   content).
+2. For some pair of their names (title or alias), the numbers in the two normalised names
+   agree, as a sorted multiset (the **number guard**). `token_set_ratio` scores
+   "Spider-Man" vs "Spider-Man 2" at 100, so without the guard an invented sequel could
+   match a missed original. A gold alias without numbers lets a prediction that omits a
+   range ("Original Minisodes") match.
+3. On such a pair of names, rapidfuzz `token_set_ratio` is at least the threshold (85; a
+   score equal to the threshold matches).
+
+Candidates are assigned one-to-one with the Hungarian algorithm (scipy
+`linear_sum_assignment`), maximising total similarity. `token_set_ratio` also gives 100
+when one title's words are a subset of the other's ("Spider-Man" vs "Spider-Man: No Way
+Home", "The Dark Knight" vs "The Dark Knight Rises"), which leaves ties that can pair works
+crosswise. The assignment weight is therefore `token_set_ratio + ratio / 1000`: plain
+ratio breaks ties in favour of the closer title, and the nudge (at most 0.1) cannot
+override a clearer `token_set_ratio` difference. Results are also reported at thresholds
+80 and 90. Fifty matches are audited by hand to measure the matcher itself.
 
 ## Metrics
 

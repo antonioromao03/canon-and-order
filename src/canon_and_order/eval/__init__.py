@@ -5,6 +5,15 @@ matched one-to-one to gold works by normalised title, then scored on completenes
 dates, row order and the gold file's rule checks.
 """
 
+from canon_and_order.eval.matching import KindGroup, Match, Matching, kind_group, match_works
 from canon_and_order.eval.titles import normalise_title, title_numbers
 
-__all__ = ["normalise_title", "title_numbers"]
+__all__ = [
+    "KindGroup",
+    "Match",
+    "Matching",
+    "kind_group",
+    "match_works",
+    "normalise_title",
+    "title_numbers",
+]
