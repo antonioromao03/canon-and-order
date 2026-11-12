@@ -23,8 +23,12 @@ order), with extras reported separately from films and seasons.
 
 ## Matching
 
-Titles are normalised (case, punctuation, leading articles, Roman numerals) and may match
-listed aliases. Candidate pairs need a compatible kind group (film, series, extra) and are
+Titles are normalised and may match listed aliases. Normalisation removes case, accents,
+apostrophes (so "Schindler's" gives "schindlers"), other punctuation (replaced by a space),
+a leading "the", "a" or "an", and a trailing bracketed year such as "(2002)". It turns
+Roman numerals 1–39 (those written with I, V and X) into digits; larger ones are left
+alone, because they would turn words such as "mix" into numbers. Other bracketed text is
+kept, since it can be the only difference between two works. Candidate pairs need a compatible kind group (film, series, extra) and are
 scored with rapidfuzz `token_set_ratio`; pairs are assigned one-to-one with the Hungarian
 algorithm at threshold 85, with results also reported at 80 and 90. Fifty matches are
 audited by hand to measure the matcher itself.
